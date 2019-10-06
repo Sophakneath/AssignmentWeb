@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/firstPage.css">
+        <link rel="stylesheet" href="css/subPage.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/abouthis.js"></script>
+        <meta charset="utf-8">
+        <title>Second Pages</title>
+        <style>
+           .parallax {
+                /* The image used */
+                background-image: url('./img/c7.jpg');
+    
+                /* Set a specific height */
+                min-height: 600px; 
+    
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0;
+            }
+    
+            .col-sm-12, .row, .bg2{
+                margin: 0;
+                padding: 0;
+            }
+            
+            .secondMenu{
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                background-color:  rgb(236, 100, 100);
+                margin: auto;
+                padding-right: 0;
+                text-align: center;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                overflow: auto;
+                white-space: nowrap;
+            }
+    
+            .modal-content{
+                width: 800px; margin: auto;
+            }
+            .modal-body{
+                padding-left: 30px; padding-right: 30px;
+            }
+            .modal-title{
+                padding-left: 20px; 
+                padding-right: 20px; 
+                font-family: 'Moulpali', cursive;
+            }
+
+            .modal-body>p{
+                font-family: 'Fasthand', serif;
+                line-height: 30px;
+                font-size: 13px;
+            }
+
+            .typeDes{
+                font-family: 'Fasthand', serif;
+                line-height: 30px;
+                text-align: justify;            
+            }
+        </style>
+    </head>
+<body>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="row row1 fix">
+                <div class="col-sm-12 menu">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg">
+                        <h5 class="bg logo navbar-brand"><b>LOGO</b></h5>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav" style="margin-left: 300px;">
+                                <a class="nav-item nav-link active" href="firstPage.html"> <b> <i class="fa fa-home"></i> HOME </b></a>
+                                <a class="nav-item nav-link active" href="testing.html"><b>ABOUT </b></a>
+                                <a class="nav-item nav-link active" href="#"><b>CONTACT US </b></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <div class="title center d-none d-md-block">
+                <h5 class="header">សិល្បៈរបាំខ្មែរ</h5>
+                <hr class="hr1">
+                <H5 class="about"> <b> ABOUT KHMER DANCE </b> </H5>
+                <p class="des" id="desciption" style="text-align: justify">របាំក៏ដូចជាតន្ត្រីនិង ល្ខោន ចម្រៀង កំណាព្យ ចម្លាក់ និង ទម្រង់សិល្បៈដទៃទៀតទាំងអស់ដែល គឺសុទ្ធតែជាតម្រូវការរបស់ជីវិតខ្មែរទាំងអស់ ។ ដោយហេតុហ្នឹងហើយ ទើបខ្មែរមានទម្លាប់ប្រើពាក្យថា ៖ ជីវិតគឺសិល្បៈ ហើយសិល្បៈគឺជីវិត នេះឯង ។ ខ្មែរត្រូវការរបស់ដើម្បីរាំថ្វាយអារក្សអ្នកតា...</p>
+                <input class="btn btn btn-secondary readM" type="button" value="READ MORE" data-toggle="modal" data-target="#exampleModal" onclick="about()">
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="b"></div>
+                <img class="d-block w-100 cover" src="img/tt21.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                    <div class="b"></div>
+                    <img class="d-block w-100 cover" src="img/tt20.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                    <div class="b"></div>
+                    <img class="d-block w-100 cover" src="img/tt22.jpg" alt="First slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="row secondMenu">
+        <div class="col-sm-12">
+            <a  href="t1-firstPage.html"> <b> ប្រវត្តិរបាំក្បាច់បុរាណ </b></a>
+            <a  href="t1-secondPage.html"><b> របៀបសំដែង </b></a>
+            <a  href="t1-thirdPage.html"><b> ការហាត់រៀនក្បាច់របាំបុរាណខ្មែរ </b></a>
+            <a  href="t1-fourthPage.html"> <b> សំលៀកបំពាក់និងគ្រឿងតុបតែងលំអកាយ </b></a>
+            <a  href="t1-fifthPage.html" style="border: 3px solid white"><b> ប្រភេទរបាំក្បាច់បុរាណ </b></a>
+        </div>
+    </div>
+    <div class="newFeedBg bg1">
+            <h5 class="colHeader" style="margin-top: 60px;"> <b>ប្រភេទរបាំក្បាច់បុរាណ</b></h5>
+            <hr>
+            <div class="container cardType">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 cardPadding card2" data-toggle="modal" data-target="#exampleModal" onclick="t1Type1()">
+                        <div class="card card1 text-center" style="width: 20rem;">
+                            <img src="img/b1.jpg" class="card-img-top cardImg">
+                            <div class="card-body">
+                                <h6 class="cardText">របាំជូនពរ</h6>
+                                <hr class="hr2">
+                                <p class="typeDes">របាំនេះសម្តែងដើម្បីជូនពរដល់ គណៈអធិបតីនិងភ្ញៀវកិត្តិយសដែលបានអញ្ជើញ​ចូល​រួម​ក្នុង​ពិធីអ្វីមួយ។​ ជាធម្មតាមុនអង្គពិធីទាំងមូលចាប់ផ្តើម គេតែង​សម្តែងរបាំនេះមុនគេ ។ </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 cardPadding card2" data-toggle="modal" data-target="#exampleModal" onclick="t1Type2()">
+                        <div class="card text-center" style="width: 20rem;">
+                            <img src="img/b2.jpg" class="card-img-top cardImg">
+                            <div class="card-body">
+                                    <h6 class="cardText">របាំទេពមនោរម្យ</h6>
+                                    <hr class="hr2">
+                                    <p class="typeDes">របាំនេះជារបាំដ៏ពិសិដ្ធមួយដែលបុព្វបុរសខ្មែរបង្កើតឡើង​សម្រាប់​ពិធីបួងសួងសុំទឹកភ្លៀង និងបួងសួងសុំសេក្តីសុខសេចក្តីចម្រើនពីទេវតា ។</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 cardPadding card2" data-toggle="modal" data-target="#exampleModal" onclick="t1Type3()">
+                        <div class="card text-center" style="width: 20rem;">
+                            <img src="img/b3.jpg" class="card-img-top cardImg">
+                            <div class="card-body">
+                                    <h6 class="cardText">របាំទេពអប្សរា</h6>
+                                    <hr class="hr2">
+                                    <p class="typeDes">“អប្បរា” ជាអ្នករាំឋានសួគ៌ដែលកើតចេញពីការកូរសមុទ្រទឹកដោះរវាង​ពួកទេព្តា និងពួកយក្សដើម្បីស្វែងរកទឹកអម្រឹត។ ​</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 cardPadding card2" data-toggle="modal" data-target="#exampleModal" onclick="t1Type4()">
+                        <div class="card card1 text-center" style="width: 20rem;">
+                            <img src="img/b5.jpg" class="card-img-top cardImg">
+                            <div class="card-body">
+                                <h6 class="cardText">របាំមុនីមេខឡា</h6>
+                                <hr class="hr2">
+                                <p class="typeDes">នៅពេលជួបគ្រោះរាំងស្ងួតខ្វះទឹកធ្វើស្រែចំការច្បារដំណាំគេតែងតែធ្វើពិធីសុំទឹកភ្លៀងនៅព្រះបរមរាជវាំងឬទីឋានណាមួយដែលយល់ថាសត្វជាកំណត់ដោយជ្រើសយករបាំមន្នីមេខាឡាជារបស់មួយក្នុងចំណោមរបាំសក្ការៈទាំងឡាយដើម្បីប្រារព្ធពិធីនេះ ។ </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 cardPadding card2" data-toggle="modal" data-target="#exampleModal" onclick="t1Type5()">
+                        <div class="card text-center" style="width: 20rem;">
+                            <img src="img/b6.jpg" class="card-img-top cardImg">
+                            <div class="card-body">
+                                    <h6 class="cardText">របាំសុវណ្ណមច្ឆា</h6>
+                                    <hr class="hr2">
+                                    <p class="typeDes">របាំសុវណ្ណមច្ឆា គឺជារបាំមួយដែលនិយាយរៀបរាប់អំពីឈុតឆាកមួយដែលទ័ពស្វាបានជញ្ជូនថ្មភ្នំ ដើម្បីសង់ស្ពានកាត់សមុទ្រទៅកាន់ក្រុងលង្កាក្រោមការបញ្ជារបស់ព្រះរាម ​។</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 cardPadding card2" data-toggle="modal" data-target="#exampleModal" onclick="t1Type6()">
+                        <div class="card text-center" style="width: 20rem;">
+                            <img src="img/b7.jpg" class="card-img-top cardImg">
+                            <div class="card-body">
+                                    <h6 class="cardText">របាំព្រះរាជទ្រព្យ</h6>
+                                    <hr class="hr2">
+                                    <p class="typeDes">របាំ​ព្រះ​រាជ​ទ្រព្យ​នៃ​ព្រះរាជាណា ចក្រកម្ពុជា គឺ​ជា​អ្នក​ថែរក្សា​ប្រពៃណី​នាដកម្ម​បុរាណ​ខ្មែរ​ជា​ចំណែក​មួយ​យ៉ាង​ជិត​ ស្និទ្ធ​ នៃ​ក្រុម​បរិពារ​របស់​មហាក្សត្រ​អស់​រយៈ​ពេល​ជាង​មួយ​ពាន់​ឆ្នាំ​​កន្លង​មក​ ហើយ ។</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="380" id="vdoBody" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!-- <img style="width: 100%" id="imgBody"> -->
+                    <p style="text-align: justify; margin-top: 30px;" id="modalBody1"></p>
+                    <br>
+                    <p style="text-align: justify" id="modalBody2"></p>
+                    <br> 
+                    <p style="text-align: justify" id="modalBody3"></p>
+                    <br><br>
+                </div>
+            </div>
+            </div>
+        </div>
+          
+        <div class="row" style="margin-top: 50px; margin-right: 0;">
+            <div class="col-sm-12">
+                <h5 class="type"> <b>CONTACT US</b></h5>
+                <hr class="hr2">
+                <div style="width: 100%; text-align: center; margin-top: 30px;">
+                    <a href="#"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
+                    <a href="#"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
+                    <a href="#"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
+                </div>
+                <p class="colTextPadding" style="text-align: center;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
+                <p style="font-size: 16px; text-align: center; margin-top: 20px;">Copyright &copy; Team o Nith</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:3000,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+            $('.carousel').carousel({
+                interval: 2000
+            })
+    
+    </script>
+</body>
+</html>

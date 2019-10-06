@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/firstPage.css">
+        <link rel="stylesheet" href="css/subPage.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/abouthis.js"></script>
+        <meta charset="utf-8">
+        <title>Second Pages</title>
+        <style>
+           .parallax {
+                /* The image used */
+                background-image: url('./img/h5.jpg');
+    
+                /* Set a specific height */
+                min-height: 500px; 
+    
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+    
+            .col-sm-12, .row, .bg2{
+                margin: 0;
+                padding: 0;
+            }
+            
+            .secondMenu{
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                background-color:  rgb(236, 100, 100);
+                margin: auto;
+                padding-right: 0;
+                text-align: center;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                overflow: auto;
+                white-space: nowrap;
+            }
+
+            .rowTextSP{
+                padding-top: 50px;
+            }
+
+            .modal-content{
+                width: 800px; margin: auto;
+            }
+            .modal-body{
+                padding-left: 30px; padding-right: 30px;
+            }
+            .modal-title{
+                padding-left: 20px; 
+                padding-right: 20px; 
+                font-family: 'Moulpali', cursive;
+            }
+
+            .modal-body>p{
+                font-family: 'Fasthand', serif;
+                line-height: 30px;
+                font-size: 13px;
+            }
+
+            .abc, .colTextSP{
+                font-family: 'Fasthand', serif;
+                line-height: 30px;
+                text-align: justify;
+            }
+
+        </style>
+    </head>
+<body>
+    <div id="header" style="height: auto; width: auto;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="row row1 fix">
+                    <div class="col-sm-12 menu">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg">
+                            <h5 class="bg logo navbar-brand"><b>LOGO</b></h5>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav" style="margin-left: 300px;">
+                                    <a class="nav-item nav-link active" href="firstPage.html"> <b> <i class="fa fa-home"></i> HOME </b></a>
+                                    <a class="nav-item nav-link active" href="testing.html"><b>ABOUT </b></a>
+                                    <a class="nav-item nav-link active" href="#"><b>CONTACT US </b></a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            <div class="title center d-none d-md-block">
+                <h5 class="header">សិល្បៈរបាំខ្មែរ</h5>
+                <hr class="hr1">
+                <H5 class="about"> <b> ABOUT KHMER DANCE </b> </H5>
+                <p class="des" id="desciption" style="text-align: justify">របាំក៏ដូចជាតន្ត្រីនិង ល្ខោន ចម្រៀង កំណាព្យ ចម្លាក់ និង ទម្រង់សិល្បៈដទៃទៀតទាំងអស់ដែល គឺសុទ្ធតែជាតម្រូវការរបស់ជីវិតខ្មែរទាំងអស់ ។ ដោយហេតុហ្នឹងហើយ ទើបខ្មែរមានទម្លាប់ប្រើពាក្យថា ៖ ជីវិតគឺសិល្បៈ ហើយសិល្បៈគឺជីវិត នេះឯង ។ ខ្មែរត្រូវការរបស់ដើម្បីរាំថ្វាយអារក្សអ្នកតា...</p>
+                <input class="btn btn btn-secondary readM" type="button" value="READ MORE" data-toggle="modal" data-target="#exampleModal" onclick="about()">
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="b"></div>
+                    <img class="d-block w-100 cover" src="img/tt21.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                        <div class="b"></div>
+                        <img class="d-block w-100 cover" src="img/tt20.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                        <div class="b"></div>
+                        <img class="d-block w-100 cover" src="img/tt22.jpg" alt="First slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>  
+    
+    <div class="row secondMenu">
+        <div class="col-sm-12">
+            <a  href="t1-firstPage.html" style="border: 3px solid white"> <b> ប្រវត្តិរបាំក្បាច់បុរាណ </b></a>
+            <a  href="t1-secondPage.html"><b> របៀបសំដែង </b></a>
+            <a  href="t1-thirdPage.html"><b> ការហាត់រៀនក្បាច់របាំបុរាណខ្មែរ </b></a>
+            <a  href="t1-fourthPage.html"> <b> សំលៀកបំពាក់និងគ្រឿងតុបតែងលំអកាយ </b></a>
+            <a  href="t1-fifthPage.html"><b> ប្រភេទរបាំក្បាច់បុរាណ </b></a>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 60px;">
+        <div class="col-sm-12">
+                <h5 class="colHeader" style="margin-top: 50px;"> <b>ប្រវត្តិរបាំក្បាច់បុរាណ</b></h5>
+                <hr class="hr2">
+                <p class="abc">
+                    នៅប្រទេសកម្ពុជាមានពាក្យពីរម៉ាត់សម្រាប់សំគាល់ទម្រង់សិល្បៈទស្សនីយភាពក្បាច់បុរាណនេះគឺ ៖ របាំឬល្ខោនក្បាច់បុរាណខ្មែរ និង របាំឬល្ខោនព្រះរាជទ្រព្យ ។ ពាក្យថារបាំ និង ល្ខោនក្នុងទីនេះក៏សម្រាប់គូសបញ្ជាក់ពីភាពខុសគ្នាខ្លះនៃទម្រង់សិល្បៈនេះក្នុងការសម្ដែងម្ដងៗផងដែរ ។ ឧទាហរណ៍ជាក់ស្តែងកាលណាទម្រង់ក្បាច់បុរាណនេះសម្ដែងជាទ្រង់ទ្រាយរបស់ដាច់តែឯងដូចជា របាំជូនពរ របាំអប្សរា ឬ របាំទេពមនោរម្យជាដើម នោះគេច្រើននិយាយថាពាក្យថា របាំក្បាច់បុរាណខ្មែរ ឬ របាំព្រះរាជទ្រព្យ ។ ចំពោះប្រភពនិងការកញ្ឆែតកំណើតនៃគម្រោងសិល្បៈរបាំ ឬ ល្ខោននេះនៅលើទឹកដីខ្មែរវិញមានឯកសារណានិយាយប្រាប់នឹងកើតនៅខែណាឆ្នាំណាទេ ប៉ុន្តែតាមការស្រាវជ្រាវដោយពឹងផ្អែកទៅលើការគាស់រកវត្ថុបុរាណ សិក្សាពីរូបចម្លាក់បុរាណនានា ការសិក្សាសិលាចរិក និង ការសិក្សាអំពីទំនៀមទំលាប់ប្រពៃណីផ្សេងៗ យើងសន្និដ្ឋានថាទំនងសិល្បៈបុរាណនេះប្រហែលជាមានកំណើតលើទឹកដីកម្ពុជាតាំងពីសម័យនគរភ្នំសតវត្សទី 1 ដល់សតវត្សទី 6 នៃគ្រឹស្តសករាជមកម្ល៉េះ ។
+                </p>
+        </div>
+    </div>
+
+    <div class="parallax"></div>
+    <div class="parallaxDiv">
+        <div class="row rowTextSP">
+                <div class="col-sm-6" style="width: 100%; text-align: center; margin: auto">
+                    <img src="img/Dancers_angkor_wat.jpg" class="img1">
+                </div>
+                <div class="col-sm-6 colAlign" width="100%">
+                    <p class="colTextSP">
+                        ចាប់ពីឆ្នាំ 1979 ដល់ឆ្នាំ 1990 ពិតមែនតែបរិយាកាសក្នុងប្រទេសបានប្រសើរជាងមុនខ្លះដោយរបបប្រល័យពូជសាសន៍ប៉ុលពត អៀង សារី ខ្មែរក្រហម បានដួលរលំ ផុតទៅហើយ ប៉ុន្តែសង្គ្រាមរវាងខ្មែរនិងខ្មែរនៅតែបន្តនៅតាមតំបន់ផ្សេងៗ ពិសេសគឺតាមព្រំប្រទល់ខ្មែរ-ថៃ ។ ឆ្លៀតពេលដែលមាតុភូមិ និង ប្រជាជនយើងកំពុងតែជួបការលំបាកនេះ ឈ្មួញទុច្ចរិត ទាំងខ្មែរទាំងបរទេសដែលមានគំនិតខិលខូចពិសេសគឺចង់បំផ្លាញឲ្យអស់សម្បត្តិវប្បធម៌ខ្មែរនោះ បានបំផុសចលនាដោយអាថ៍កំបាំងទិញយកវត្ថុបុរាណដែលលួចបានពីកម្ពុជាក្នុងតម្លៃថ្លៃបង្គួរ ។ គាប់ជួនពេលនោះជីវភាពរបស់ប្រជាជនខ្មែរយើងនៅក្រីក្រលំបាកតោកយ៉ាករួមផ្សំនឹងការយល់ដឹងនៅមានកម្រិតទាបនៅឡើយជនជាតិខ្មែរមួយចំនួន ទាំងជនសាមញ្ញ ទាំងអ្នកមានអំណាច ក៏បានធ្លាក់ចូលក្នុងអន្ទាក់នៃការបំផ្លាញវប្បធម៌ជាតិរបស់ខ្លួននេះដោយមិនដឹងខ្លួន ។ ក្នុងជីកគាស់កកាយរកវត្ថុបូរាណនោះយើងបានជួប ប្រទះនឹងរូបស្រីរបាំប្រជាចម្លាក់ដីដុត ហើយនិងរូបស្វាទំនង ជារូបហនុមាណកាន់ដំបងយ៉ាងវែងផងដែរ ។ 
+                        បើតាមព័ត៌មាន រូបស្រីរបាំ និង រូបហនុមាណកាន់ដំបងនេះ ត្រូវគេគាស់យកបានក្នុងបរិវេណវត្តគំនូរ ដែលស្ថិតនៅចំកណ្ដាលទីតាំងរាជធានីរាជាណាចក្រនគរភ្នំឯង ហើយក៏ដោយសារតឹកតាងនេះហើយ ដែលនាំឲ្យយើងមានការសម្តែងថា របាំក្បាច់បុរាណ ឬ របាំព្រះរាជាទ្រព្យនេះប្រហែលជាបានចាប់កំណើតលើទឹកដីកម្ពុជានេះតាំងពីសម័យនគរភ្នំមកម្លេះពោលគឺការចំលងតាមបែបផែនរបាំឥណ្ឌា ។                             
+                    </p>
+                </div>
+        </div>
+        <div class="row" style="padding-top: 50px;">
+            <div class="col-sm-6 colAlign" width="100%">
+                <p class="colTextSP">
+                    ចំណុចម៉្យាងសំខាន់ទៀត គឺការសិក្សាសិលាចារឹករបស់អ្នកឯកទេសខាងភាសាសំស្ក្រឹតនិងខ្មែរបុរាណ ដែលបានរកឃើញឯកសារ ដ៏មានសារៈសំខាន់ជាច្រើនទាក់ទងនឹងប្រវត្តិសាស្ត្រជំនឿសាសនា ទំនៀមទម្លាប់ប្រពៃណី វប្បធម៌សិល្បៈ ល្ខោន របាំតន្រ្តី សព្វបែបយ៉ាងដែល មានអាយុពីយូឡុងច្រើនសតវត្សមកហើយ ហើយសុទ្ធតែជាស្នាដៃរបស់បុព្វបុរស ដូនតាខ្មែរបានបន្សល់ទុកមកជាស្រេចនៅក្នុងអត្ថបទសិក្សាដែលមានចំណងជើងថា ៖ Music and Dance in Ancient Cambodia as Evidenced by old Khmer Epigraphy របស់អ្នកស្រី ពៅ សាវរស់ អ្នកស្រីបានដកស្រង់នូវភស្ដុតាងជាក់លាក់ ជាពាក្យសម្ដីឬឈ្មោះជាភាសាសំស្ក្រឹតនិងខ្មែរបូរាណដែលមានចារទុកក្នុងផ្ទាំងសិលាចារឹក មានកាលបរិច្ឆេទត្រឹមត្រូវទៅតាមរជ្ជកាលសោយរាជ្យនៃព្រះមហាក្សត្រខ្មែរនានាច្បាស់លាស់ស្ដីអំពីល្ខោនភាណី ដែលប្រហែលជាទម្រង់ល្ខោនខោល សព្វថ្ងៃ ។ ហើយក្នុងនោះក៏មានសិលាចារឹកលេខ k557 នឹង k600 និងសិលាចារឹកលេខ k137  រកឃើញក្នុងវត្តគំនូរអង្គរបុរី ជាសិលាចារឹកក្នុងរជ្ជកាលព្រះបាទជ័យវរ្ម័នទីមួយ ដែលបានរៀបរាប់អំពីតង្វាយ ជាអ្នកចម្រៀងនិងឧបករណ៍ភ្លេង និង របាំចំពោះទេវស្ថាននៅទីនោះ ។ ប្រហែលជាព្រះបាទជ័យវន្ម័នទី 1 ព្រះអង្គទ្រង់បានឧទ្ទិសក្រុមសិល្បៈស្រីថ្វាយចំពោះព្រះអាទិទេពថែមទៀតផង ។ ចំណុចនេះយើងជឿថា បើព្រះបាទជ័យវន្ម័នទីមួយ (៦55 ដល់ 681) ជាព្រះរាជាឥសូរនិយមបានឧទ្ទិសក្រុមសិល្បៈស្រីដល់អាទិទេព ពិសេសគឺព្រះឥសូរក្នុងរាជព្រះអង្គលោកនោះ ទម្រង់សិល្បៈរបាំស្រីនេះគង់មានគំនិតយ៉ាងយូរតាំងពីមុនពេលនោះមិនខាន មុននឹងក្លាយជាដង្វាយដ៏គាប់ព្រះទ័យរបស់ព្រះអាទិទេពនោះ ។
+                </p>
+            </div>
+            <div class="col-sm-3 col-6" style="width: 100%; text-align: center; margin: auto;">
+                <img src="img/h1.jpg" style="width: 90%; float: right;">
+            </div>
+            <div class="col-sm-3 col-6" style="width: 100%; text-align: center; margin: auto;">
+                <img src="img/h6.jpg" style="width: 90%; float: left;">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 60px;">
+            <div class="col-lg-5 col-12" style="width: 100%; padding: 0;">
+                <div class="row">
+                    <img src="img/h2.jpg" class="img" style="width: 100%; height: 570px;">
+                </div>
+                <div class="row">
+                    <img src="img/h3.jpg" class="img" style="width: 100%; height: 570px;">
+                </div>
+            </div>
+            <div class="col-lg-7 col-12 colAlign" width="100%" style="background: rgb(236, 100, 100);">
+                <p class="colTextSP" style="color: white; padding-top: 30px;">
+                    រឿងមួយទៀតដែលកើតនៅក្នុងសម័យអាណាចក្រចេនឡាគឺការកកើតជាខ្សែសូរ្យរង្ស ឬ អទិច្ចវង្សគឺវង្សស្រីកម្ពុ ដោយមានការចងសម្ព័ន្ធរបស់ឥសីកម្ពុស្វ័យម្ភុវ និងនាងអប្សរាមេរ៉ា ដូចមានកត់ត្រាទុកក្នុងសិលាចារឹកបក្សីចាំក្រុងសតវត្សទី 10 ដែលមាននិទានថា ស្តេចខ្មែរដែលមានកំណើតមកពីឥសីកម្ពុស្វ័យម្ភុវ និងមានអប្សរាមេរា ដែលព្រះឥសូរបានប្រទានឲ្យជាមហេសី ។ ព្រឹត្តិការណ៍ចងភ្ជាប់គ្នារវាងខ្សែសូរ្យរង្ស ខាងចេនឡានិងខ្សែសោមវង្សខាងនគរភ្នំ ដែលយើងខ្ញុំយល់ថា ជាព្រឹត្តិការណ៍ដែលមានទាក់ទងទៅនឹងការកកើតទម្រង់សិល្បៈរបាំក្បាច់បុរាណឬរបាំព្រះរាជទ្រព្យខ្មែរនេះ ព្រោះយើងខ្ញុំមានការសង្ស័យផងនិងមានជំនឿផងថា ទម្រង់សិល្បៈនេះប្រហែលជាបានយោនយកកំណើតនៅលើទឹកដីកម្ពុជា ដោយចម្លងតាមរបាំនៃព្រហ្មញ្ញសាសនាឥណ្ឌានៅក្នុងសម័យហ្វូណន ឬ នគរភ្នំសតវត្សទី 1 ដល់សតវត្សទី 6 ឬយ៉ាងហោចណាស់ក៏ប្រហែលជាកើតនៅក្នុងសម័យចេនឡាសតវត្សទី 7 រហូតដល់សតវត្សទី 8 នៃគ្រិស្តសករាជ ពោលគឺមុនសម័យអង្គរជាក់ជាមិនខាន ។ ជាក់ស្ដែងមកដល់សម័យអង្គរដែលចាប់ផ្ដើមឡើងពីរាជ្យព្រះបាទជ័យវរ្ម័នទី ii (802-850) ព្រះមហាក្សត្រដែលទ្រង់បានរំដោះ កម្ពុជទេសគឺប្រទេសខ្មែរឲ្យរួចផុតពីចំណុះរាជវង្សសាយលីននៃកោះជ្វាដែលបានប្រារព្ធពិធីទេវរាជលើភ្នំមហេន្ទ្របវ៌តភ្នំគូលែន ។ ហើយក្នុងពេលដែលព្រះអង្គសោយទីវង្គតទៅ ព្រះអង្គទ្រង់ទទួលព្រះមរណនាមថា បរមវិស្ណុលោក នោះគេឃើញមានរូបចំលាក់់ទេពអប្សរ គឺស្រីរបាំនៅខាងសួរតាំងពីអាគារប្រាង្គកំផែងទាំងបួនខាងក្រៅរហូតដល់បណ្ណាល័យខាងក្នុងបរិវេណកំផែង រហូតដល់តួប្រាសាទដែលមានចម្លាក់ទេពអប្សរនេះតាំងពីផ្នែកខាងក្រោមរហូតដល់ផ្នែកកំពូលនៃប្រាសាទ ។ មិនត្រឹមតែប៉ុណ្ណោះទេរហូតមកដល់ពេលដែលព្រះពុទ្ធសាសនាមហាយានបានឡើងជាសាសនាធំនៅក្នុងប្រទេសកម្ពុជាពិសេសក្នុងរាជព្រះបាទជ័យវរ្ម័នទី 7 ១៩៨១ ដល់ 1918 របាំក្បាច់បុរាណឬទម្រង់ល្ខោនស្រីនេះទំនងជាកាន់តែរុងរឿងនិងរីករាយស្រស់ស្រាយថែមទៀតផងព្រោះថ្វីត្បិតតែមានការដោះដូរជំនឿសាសនានៅក្នុងព្រះនគរមែនប៉ុន្តែរបស់គាត់បុរាណដែលជាកេរដំណែលរបស់បុព្វបុរសដូនតាខ្មែរត្រូវបានគេថែរក្សាយ៉ាងល្អប្រពៃប្រហែលជាបានបង្វែរឬបន្ថែមតួនាទីឲ្យទម្រង់សិល្បៈនេះពីអ្នកបម្រើដ៏គាប់ព្រះទ័យទេវទាសីរបស់ព្រះអាទិទេពខាងព្រហ្មញ្ញសាសនាទេវរាជជាអ្នកបម្រើខាងវិហារព្រះពុទ្ធសាសនាពុទ្ធរាជបានទៀតផង ។ ជាក់ស្តែងដូចមានសិលាចារឹកនៅប្រាសាទតាព្រហ្មឬរាជវិហារដែលព្រះអង្គចាត់ចែងកសាងឡើងនៅឆ្នាំ 1986 ដើម្បីឧទ្ទិសចំពោះព្រះមាតានិងព្រះរាជគ្រូឈ្មោះជ័យមង្គលលានោះបានបញ្ជាក់ថាក្នុងប្រាសាទនេះមានស្រីរបាំចំនួន 615 នាក់ចំណែកខាងប្រាសាទព្រះខ័នឬជ័យស្រីសាងឡើងក្នុងឆ្នាំ 1981 ដើម្បីឧទ្ទិសចំពោះព្រះបិតាព្រះអង្គវិញមានអ្នករបាំរហូតដល់ 1 ពាន់នាក់ឯណោះសម្រាប់រៀបចំរាំថ្វាយក្នុងពិធីសក្ការបូជាផ្សេងៗនៅក្នុងប្រាសាទនេះ ។ មិនត្រឹមតែប៉ុណ្ណោះទេព្រះនាងឥន្ទ្រទេវីដែលព្រះបាទជ័យវរ្ម័នទី 7 ទ្រង់បានអភិសេកជាមហេសីបន្តពីព្រះនាងជ័យរាជទេវីព្រះអនុជរបស់ព្រះនានានិងជាអគ្គមហាសីទ្រង់សោយវិលាល័យទៅហើយព្រះនាងឥន្ទ្រទេវីត្រូវបានព្រះរាជាជាស្វាមីទ្រង់តែងតាំងជាបរិញាយាយកាចានៅមហាវិទ្យាល័យជ័យស្រីនេះទ្រង់ទាំងអ្នកបាននាំពួកស្រីដែលជាព្រះរាជបរិនិព្វានរបស់ព្រះនាងសម្ដែងរឿងជាដកថែមផ្សេងទៀតផង ។ រហូតត្រើយសម័យលង្វែកយើងអាចដឹងថាសិល្បៈរបាំព្រះរាជទ្រព្យនេះមានវត្តមានជានិច្ចក្នុងនៅក្នុងព្រះបរមរាជវាំងរហូតមកដល់រជ្ជកាលព្រះរាជសម្ភារពញាតូដែលជាព្រះមហាក្សត្រទ្រង់ជាកវីនិពន្ធនៅឆ្នាំ 1929 ដល់ 1634 ដែលទ្រង់គង់នៅឧត្ដុង្គហើយមានវិបត្តិជាមួយនឹងព្រះឧទ័យជាមាបិតុលាពីរឿងសាហាវលើស្រីតែម្នាក់ហើយព្រះអង្គទ្រង់ផ្លាស់មកគង់នៅវាំងកោះធ្លាប់ដោយប្រហែលជានាំមកនូវក្រុមសិល្បៈព្រះរាជក្រមមួយក្រុមមកជាមួយផង ។ ក្រោយឆ្នាំ 1993 ពោលគឺពេលដែលសង្គ្រាមស៊ីវិលត្រូវបានបញ្ចប់ដោយមានការបោះឆ្នោតគាំទ្រដោយអង្គការសហប្រតិបត្តិការជាជាតិហើយប្រទេសជាតិត្រូវសម្ដេចអោយស្ថិតក្នុងរបបរាជានិយមព្រះរាជាណាចក្រកម្ពុជាជាលើកទី 2 ឡើងវិញនោះរបាំក្បាច់បុរាណនេះក៏ត្រូវបានគេនិយមហៅឈ្មោះទាំងពីរគឺល្ខោនឬរបាំក្បាច់បុរាណខ្មែរនិងល្ខោនឬរបាំព្រះរាជាប្រុសរហូតមកដល់សព្វថ្ងៃនេះ ។
+                </p>
+            </div>
+        </div>
+    
+        <div class="row" style="margin-top: 50px; margin-right: 0;">
+            <div class="col-sm-12">
+                <h5 class="type"> <b>CONTACT US</b></h5>
+                <hr class="hr2">
+                <div style="width: 100%; text-align: center; margin-top: 30px;">
+                    <a href="#"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
+                    <a href="#"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
+                    <a href="#"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
+                </div>
+                <p class="colTextPadding" style="text-align: center;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
+                <p style="font-size: 16px; text-align: center; margin-top: 20px;">Copyright &copy; Team o Nith</p>
+            </div>
+        </div>
+    </div>
+
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <img style="width: 100%" id="imgBody">
+                <p style="text-align: justify; margin-top: 30px;" id="modalBody1"></p>
+                <br>
+                <p style="text-align: justify" id="modalBody2"></p>
+                <br> 
+                <p style="text-align: justify" id="modalBody3"></p>
+                <br><br>
+            </div>
+        </div>
+        </div>
+    </div>    
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:3000,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+            $('.carousel').carousel({
+                interval: 2000
+            })
+            function load_header() {
+                document.getElementById("header").innerHTML='<object type="text/html" data="navbar.html" style="width:100%; height:auto;"></object>';
+            }
+    </script>
+</body>
+</html>

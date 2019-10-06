@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/firstPage.css">
+        <link rel="stylesheet" href="css/subPage.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/abouthis.js"></script>
+        <meta charset="utf-8">
+        <title>Second Pages</title>
+        <style>
+           .parallax {
+                /* The image used */
+                background-image: url('./img/tt25.jpg');
+    
+                /* Set a specific height */
+                min-height: 500px; 
+    
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+    
+            .col-sm-12, .row, .bg2{
+                margin: 0;
+                padding: 0;
+            }
+            
+            .secondMenu{
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                background-color:  rgb(236, 100, 100);
+                margin: auto;
+                padding-right: 0;
+                text-align: center;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                overflow: auto;
+                white-space: nowrap;
+            }
+
+            .rowRole{
+                padding-left: 120px; 
+                padding-right: 120px;
+            }
+
+            .modal-content{
+                width: 800px; margin: auto;
+            }
+            .modal-body{
+                padding-left: 30px; padding-right: 30px;
+            }
+            .modal-title{
+                padding-left: 20px; 
+                padding-right: 20px; 
+                font-family: 'Moulpali', cursive;
+            }
+
+            .modal-body>p, .abc, .colTextSP, .c{
+                font-family: 'Fasthand', serif;
+                line-height: 30px;
+                font-size: 13px;
+                text-align: justify; 
+            }
+
+            .c{
+                margin-left: 120px; 
+                margin-right: 120px; 
+                margin-top: 50px; 
+                color: rgb(39, 39, 39);
+            }
+
+        </style>
+    </head>
+<body>
+    <div id="header" style="height: auto; width: auto;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="row row1 fix">
+                    <div class="col-sm-12 menu">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg">
+                            <h5 class="bg logo navbar-brand"><b>LOGO</b></h5>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav" style="margin-left: 300px;">
+                                    <a class="nav-item nav-link active" href="firstPage.html"> <b> <i class="fa fa-home"></i> HOME </b></a>
+                                    <a class="nav-item nav-link active" href="testing.html"><b>ABOUT </b></a>
+                                    <a class="nav-item nav-link active" href="#"><b>CONTACT US </b></a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="title center d-none d-md-block">
+                    <h5 class="header">សិល្បៈរបាំខ្មែរ</h5>
+                    <hr class="hr1">
+                    <H5 class="about"> <b> ABOUT KHMER DANCE </b> </H5>
+                    <p class="des" id="desciption" style="text-align: justify">របាំក៏ដូចជាតន្ត្រីនិង ល្ខោន ចម្រៀង កំណាព្យ ចម្លាក់ និង ទម្រង់សិល្បៈដទៃទៀតទាំងអស់ដែល គឺសុទ្ធតែជាតម្រូវការរបស់ជីវិតខ្មែរទាំងអស់ ។ ដោយហេតុហ្នឹងហើយ ទើបខ្មែរមានទម្លាប់ប្រើពាក្យថា ៖ ជីវិតគឺសិល្បៈ ហើយសិល្បៈគឺជីវិត នេះឯង ។ ខ្មែរត្រូវការរបស់ដើម្បីរាំថ្វាយអារក្សអ្នកតា...</p>
+                    <input class="btn btn btn-secondary readM" type="button" value="READ MORE" data-toggle="modal" data-target="#exampleModal" onclick="about()">
+                </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="b"></div>
+                    <img class="d-block w-100 cover" src="img/tt21.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                        <div class="b"></div>
+                        <img class="d-block w-100 cover" src="img/tt20.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                        <div class="b"></div>
+                        <img class="d-block w-100 cover" src="img/tt22.jpg" alt="First slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>  
+    
+    <div class="row secondMenu">
+        <div class="col-sm-12">
+            <a  href="t2-firstPage.html" style="border: 3px solid white"> <b> ប្រវត្តិរបាំប្រពៃណីខ្មែរ </b></a>
+            <a  href="t2-secondPage.html"><b> ប្រភេទរបាំប្រពៃណីខ្មែរ </b></a>
+            <a  href="t2-thirdPage.html"><b> របាំប្រពៃណីខ្មែរ </b></a>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 60px;">
+        <div class="col-sm-12">
+                <h5 class="colHeader" style="margin-top: 50px;"> <b>ប្រវត្តិរបាំប្រពៃណីខ្មែរ</b></h5>
+                <hr class="hr2">
+                <p class="abc">
+                    ពាក្យប្រពៃណី ឬ ប្រវេណី ឬ បវេណីមានន័យថាទំនៀមពូជពង្សដំណងត្រកូលដូចជាការខិតខំថែរក្សាបវេណីនៃត្រកូលរបស់ខ្លួន ឬ ការនិយមធ្វើបុណ្យទានតាមប្រពៃណីជាដើម ។ ឯរបាំប្រពៃណីវិញ គឺសម្គាល់របាំទាំងឡាយដែលស្ថិតជាប់ នឹង ពិធីប្រពៃណី ឬ ពិធីតំណត្រកូលដ៏យូរលង់មកហើយរបស់ជនជាតិខ្មែរឬក៏ជនជាតិដទៃទៀតទាំងអស់ ដែលរស់នៅលើទឹកដីនៃព្រះរាជាណាចក្រកម្ពុជាក្នុងតំបន់ខុសៗគ្នា ទាំងមានការនិយមដូចគ្នាក្តី ឬ ការនិយមខុសគ្នាត្រីនៅក្នុងតំបន់ភ្នំ ខ្ពង់រាប តំបន់វាលទំនាប ទន្លេមេគង្គ និង តំបន់មាត់សមុទ្រ ដូចជារបាំកាប់ក្របីផឹកស្រារបស់បងប្អូនជនជាតិ ខ្មែរព្នង ខ្មែរក្រឹង ខ្មែរទំពូន ដែលជឿលើជំនឿអារក្សអ្នកតា ។ របាំនេះនៅភូមិភាគឥសាស្ថិតនៅ ជាប់ជាមួយពិធីប្រពៃណីកាប់ក្របីសែនអ្នកតាក្នុងពេល ដែលអ្នកភូមិជួបគ្រោះអាសន្នដើម្បីបំបាត់ឧបទ្រពចង្រៃ ក្នុងសេចក្តីសុខសប្បាយអោយកើតមានដល់ស្រុកភូមិហើយពេលខ្លះគេរាំសុំទឹកភ្លៀងផងដែរ ។                        
+                </p>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 20px; margin: 0px;">
+        <div class="col-lg-7 col-12 colAlign" width="100%" style="background: rgb(236, 100, 100);">
+            <p class="colTextSP" style="color: white; padding-top: 30px;">
+                    របាំក្ងោករបស់បងប្អូនជនជាតិកូឡា ដែលច្រើនមានមុខរបរជាអ្នករកតែបងពេជ្រត្រូវបាននេះច្រើននាំក្នុងថ្ងៃសីល ឬក៏ក្នុងពិធីបុណ្យផ្សេងៗព្រះពុទ្ធសាសនា ដើម្បីសង់សេចក្តីសុខ និងរកទទួលទានមានបានផង ។
+                    <br><br>
+                    របាំគោះត្រឡោក ឬ កណ្ដូបសេះនៅខេត្តស្វាយរៀង ដែលជាប់នឹងពិធីអាពាហ៍ពិពាហ៍មង្គលការកូនប្រុសស្រី ពិធីពិសេសក្នុងពិធីហែកូនកំឡោះ ។ ឯងរបាំបុកល័ក្ខវិញក៏បានដកស្រង់ចេញពីទំនៀមទម្លាប់អាពាហ៍ពិពាហ៍របស់ជនជាតិខ្មែរ ដែលជាមរតករបស់ព្រះថោងនាងនាគព្រះមហាក្សត្រខ្មែរនៅ សតវត្សទី 1 នៃគ្រិស្តសករាជ ។ របាំខែល ឬ របាំវាយកួយរបស់បងប្អូនជនជាតិកួយនៅខេត្តស្ទឹងត្រែងដែលជារបាំមានប្រភពមកពីកីឡា ដែលជាទំនៀមទម្លាប់សប្បាយរីករាយរបស់ជនជាតិនេះ ក្នុងពិធីបុណ្យចូលឆ្នាំប្រពៃណីជាតិ ។ របាំព័ទ្ធរ៉ុង នៅខេត្តកោះកុងដែលទាក់ទងនិងទំនៀមទំលាប់បួងសួង បន់ស្រន់ រាំថ្វាយអ្នកតា មុនចេញទៅរកជ័ររុ៉ង ដើម្បីសុំសេចក្តីសុខនិងបានជោគជ័យក្នុងការរកជ័ររ៉ុងនេះ ។
+                    <br><br>
+                    របាំផ្លយសួយ និង របាំជាច្រើនទៀតរបស់ជនជាតិសួយនៅខេត្តកំពង់ស្ពឺ ដែលមានជំនឿលើអារក្សអ្នកតាដែរ ។ របាំត្រុដិនៅខេត្តសៀមរាប និង នៅម្ដុំតំបន់ជួរភ្នំដងរែក រាំក្នុងពិធីចូលឆ្នាំថ្មី ដើម្បីបំបាត់ឧបទ្រពចង្រៃឆ្នាំចាស់ និង សូមឱ្យមានអង្គសេរីសួស្ដី សុភមង្គលក្នុងឆ្នាំថ្មីថែមទៀតផង ។ របាំនាងមែ៉វ ឬ របាំត្រុដិនាងម៉េវ ដែលសិល្បករនាំគ្នាសែនឆ្មាដារាំកាត់ស្រុកភូមិជាច្រើនដើម្បីសុំទឹកភ្លៀង ពិសេសក្នុងពេលដែលស្រុកទេសជួបគ្រោះរាំងស្ងួតនោះ ។                    
+                    <br></br>
+                    តាមការស្រាវជ្រាវរមកហើយ យើងសង្កេតឃើញថា ភាគច្រើនលើកនៃរបាំប្រពៃណីនៅប្រទេសកម្ពុជា គឺសុទ្ធតែទាក់ទងទៅនឹងជំនឿអារក្សអ្នកតាដែលជាជំនឿរបស់ខ្មែរដើម ។ ប៉ុន្តែក៏មានរបាំខ្លះទាក់ទងនឹងព្រះពុទ្ធសាសនាផងដែរ ដូចជារបាំក្ងោកប៉ៃលិន និង របាំត្រុដិជាដើម ។
+                    
+            </p>
+        </div>
+        <div class="col-lg-5 col-12" style="width: 100%; padding: 0;">
+            <img src="img/t2-2.jpg" class="img" style="width: 100%; height: 660px;">
+        </div>
+    </div>
+    
+        <div style="background-color: #F5F5F5; width: 100%; border: 1px solid #F5F5F5;">
+            <p class="c">
+                    ម្យ៉ាងទៀតដោយសង្កេតឃើញថា មានរបាំ និង ពិធីប្រពៃណីខ្លះមានអ្នកណាដូចគ្នាទាំងនៅកម្ពុជា និង នៅប្រទេសដទៃទៀតស្ថិតនៅក្នុងតំបន់ជាមួយគ្នា ដូចជារបាំគោះត្រឡោក របាំគោះអង្រែ ល្បែងប្រពៃណីចាប់កូនខ្លែង ឬ លាក់កន្សែងជាដើមនោះ ទើបអស់លោកអ្នកប្រាជ្ញអ្នកស្រាវជ្រាវ ទាំងអស់យកថារបាំប្រពៃណី ឬ ពីធីប្រពៃណីទាំងនេះជាមរត៌កមកធ្វើរួមគ្នារបស់ជនជាតិ ទាំងឡាយដែលស្ថិតក្នុងអំបូរអូស្ត្រូអាស៊ី អាស៊ីភាគខាងត្បូង ដែលមានចូលយកកំណើតច្រើនពាន់ឆ្នាំមកហើយ នៅអាស៊ីភាគខាងត្បូងពិសេសនៅតាមជួរភ្នំនានា ឬ តាមកោះនានា ដែលស្ថិតក្នុងតំបន់អាស៊ីអាគ្នេយ៍នេះតែម្ដង ។
+                    <br><br>
+                    ចំពោះការសិក្សាស្រាវជ្រាវរបស់ប្រពៃណីនៅប្រទេសកម្ពុជាវិញ យើងទើបតែបានចាប់ផ្ដើមធ្វើឡើងបន្តិចបន្ទួចនៅក្នុងឆ្នាំ 1950 ។ លុះដល់អំឡុងឆ្នាំ 1960 ក្រោមព្រះរាជតំរិះ និង ព្រះរាជកិច្ចឧបត្ថម្ភរបស់ព្រះមហាក្សត្រីយានី កុសុមៈនារីរតន៍ ដែលទ្រង់សព្វព្រះរាជហឫទ័យថែរក្សាការពារនិង លើកតម្កើងវប្បធម៌អត្តសញ្ញាណជាតិអោយខ្ពស់ត្រដែតឡើងនោះគឺក្រុមអ្នកសិក្សាស្រាវជ្រាវមួយក្រុមបានកើតឡើង ហើយធ្វើសកម្មភាពយ៉ាងសកម្ម ។                    
+                    <br><br>
+                    របាំប្រពៃណីដែលយើងបានទៅរៀនស្មូត ហើយចម្លងមកពីប្រជាជនបាន មានដូចតទៅ ៖
+            </p>
+            <div class="row rowRole">
+                <div class="col-sm-12">
+                    <img src="img/t2-1.jpg" class="imageRole">
+                </div>
+            </div>
+            <div class="row rowRole" style="padding-bottom: 40px;">
+                <div class="col-sm-6 colRole" style="border-right: 2px solid #898888;">
+                    <ul class="abc" style="color: rgb(39, 39, 39)">
+                        <li>របាំត្រុដិ			ខេត្តសៀមរាបនិងជួរភ្នំដងរែក</li>
+                        <li>របាំត្រុដិនាងម៉ែវ		ខេត្តសៀមរាបនិងជួរភ្នំដងរែក</li>
+                        <li>របាំក្ងោកប៉ៃលិន		ខេត្តប៉ៃលិន</li>
+                        <li>របាំបក់ស្រូវ		ខេត្តបាត់ដំបង</li>
+                        <li>របាំក្ងោកពោធិ៍សាត់	ខេត្តពោធិ៍សាត់</li>
+                        <li>របាំបេះក្រវាញ		ខេត្តពោធិ៍សាត់</li>
+                        <li>របាំសែនភ្លយ		ខេត្តពោធិ៍សាត់</li>
+                        <li>របាំស្នែងទន្សោង		ពោធិ៍សាត់និងកំពង់ឆ្នាំង</li>
+                        <li>របាំព័ទ្ធរង្គ		ខេត្តកោះកុង</li>
+                        <li>របាំភ្លយសួយ		ខេត្តកំពង់ស្ពឺ</li>
+                        <li>របាំកន្តែរ៉ែ		ខេត្តកំពង់ស្ពឺនិងកំពង់ធំ</li>
+                        <li>របាំច្រម			ខេត្តតាកែវ</li>
+                        <li>របាំវាយក្រាប់		ខេត្តតាកែវកណ្ដាល</li>
+                        <li>របាំអន្ទង់ហែន		ខេត្តកណ្ដាល</li>
+                        <li>របាំគូត្រឡប់ឬកណ្ដូបសេះ	ខេត្តស្វាយរៀង</li>
+                        <li>របាំគោះអង្រែ		ខេត្តកំពង់ចាមកណ្ដាលដងរែក</li>
+                        <li>របាំតូណៃទីន		ខេត្តរតនគិរីមណ្ឌលគិរី</li>
+                        <li>របាំកាប់ក្របីផឹកស្រា	ខេត្តរតនគីរីមណ្ឌលគីរី</li>
+                        <li>របាំរងបងភូមិថ្មី		ខេត្តរតនគិរី</li>
+                        <li>របាំគែន			ខេត្តស្ទឹងត្រែង</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 colRole" style="border-left: 2px solid #898888">      
+                    <ul class="abc" style="color: rgb(39, 39, 39)">
+                        <li>របាំវាយកួយ		ខេត្តស្ទឹងត្រែង</li>
+                        <li>របាំចាក់គ្រើល		កំពង់ធំ</li>
+                        <li>របាំត្បាល់កាប់ឬក្បាលក្បឿង	ខេត្តកំពង់ធំ</li>
+                        <li>របាំអារក្សចាម		ខេត្តកំពង់ឆ្នាំង</li>
+                        <li>របាំស្នា</li>
+                        <li>របាំនេសាទ</li>
+                        <li>របាំកង្កែប</li>
+                        <li>របាំអាពាហ៍ពិពាហ៍បក្សី</li>
+                        <li>របាំស្ករត្នោត</li>
+                        <li>របាំក្អម	ខេត្តកំពង់ឆ្នាំង</li>                
+                        <li>របាំបរគោ		ខេត្តកំពង់ឆ្នាំង</li>
+                        <li>របាំច្រូតស្រូវ</li>
+                        <li>របាំបុកលក្ខណ៍</li>
+                        <li>របាំកន្សែងស្នេហ៍</li>
+                        <li>របាំចាក់អង្ក្រង		ខេត្តសៀមរាប</li>
+                        <li>របាំឆៃយ៉ាំ</li>
+                        <li>របាំដាល់អំបុក		ខេត្តកំពង់ស្ពឺ</li>
+                        <li>របាំស្គរ			ខេត្តកំពង់ស្ពឺ</li>
+                        <li>របាំគងសួយ		ខេត្តកំពង់ស្ពឺ</li>
+                        <li>របាំគងស្ទៀង		ខេត្តក្រចេះ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 50px; margin-right: 0;">
+            <div class="col-sm-12">
+                <h5 class="type"> <b>CONTACT US</b></h5>
+                <hr class="hr2">
+                <div style="width: 100%; text-align: center; margin-top: 30px;">
+                    <a href="#"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
+                    <a href="#"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
+                    <a href="#"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
+                </div>
+                <p class="colTextPadding" style="text-align: center;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
+                <p style="font-size: 16px; text-align: center; margin-top: 20px;">Copyright &copy; Team o Nith</p>
+            </div>
+        </div>
+
+          <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <img style="width: 100%" id="imgBody">
+                    <p style="text-align: justify; margin-top: 30px;" id="modalBody1"></p>
+                    <br>
+                    <p style="text-align: justify" id="modalBody2"></p>
+                    <br> 
+                    <p style="text-align: justify" id="modalBody3"></p>
+                    <br><br>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:3000,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+            $('.carousel').carousel({
+                interval: 2000
+            })
+            function load_header() {
+                document.getElementById("header").innerHTML='<object type="text/html" data="navbar.html" style="width:100%; height:auto;"></object>';
+            }
+    </script>
+</body>
+</html>

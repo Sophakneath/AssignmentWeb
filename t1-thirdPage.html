@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/firstPage.css">
+        <link rel="stylesheet" href="css/subPage.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/abouthis.js"></script>
+        <meta charset="utf-8">
+        <title>Second Pages</title>
+        <style>
+           .parallax {
+                /* The image used */
+                background-image: url('./img/tt19.jpg');
+                
+                /* Set a specific height */
+                min-height: 500px; 
+    
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0;
+            }
+
+            #container{
+                position: absolute;
+                z-index: 1000;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.3);
+                height: 500px;
+                width: 100%;
+                overflow: auto;
+            }
+
+            #textBody{
+                margin-top: 260px;
+                margin-left: 100px;
+                margin-right: 100px;     
+                font-family: 'Fasthand', serif;      
+                font-size: 13px;
+                line-height: 30px;      
+            }
+    
+            .col-sm-12, .row, .bg2{
+                margin: 0;
+                padding: 0;
+            }
+
+            .secondMenu{
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                background-color:  rgb(236, 100, 100);
+                margin: auto;
+                padding-right: 0;
+                text-align: center;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                overflow: auto;
+                white-space: nowrap;
+            }
+
+            .rowTextFP{
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            .rowRole{
+                padding-left: 120px; 
+                padding-right: 120px;
+                padding-bottom: 20px;
+            }
+
+            .modal-content{
+                width: 800px; margin: auto;
+            }
+            .modal-body{
+                padding-left: 30px; padding-right: 30px;
+            }
+            .modal-title{
+                padding-left: 20px; 
+                padding-right: 20px; 
+                font-family: 'Moulpali', cursive;
+            }
+
+            .modal-body>p{
+                font-family: 'Fasthand', serif;
+                line-height: 30px;
+                font-size: 13px;
+            }
+
+            .abc, .colTextSP, .a{
+                font-family: 'Fasthand', serif;
+                line-height: 30px;
+                text-align: justify;
+            }
+
+            .a{
+                font-size: 13px;
+            }
+
+        </style>
+    </head>
+<body>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="row row1 fix">
+                <div class="col-sm-12 menu">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg">
+                        <h5 class="bg logo navbar-brand"><b>LOGO</b></h5>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav" style="margin-left: 300px;">
+                                <a class="nav-item nav-link active" href="firstPage.html"> <b> <i class="fa fa-home"></i> HOME </b></a>
+                                <a class="nav-item nav-link active" href="testing.html"><b>ABOUT </b></a>
+                                <a class="nav-item nav-link active" href="#"><b>CONTACT US </b></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <div class="title center d-none d-md-block">
+                <h5 class="header">សិល្បៈរបាំខ្មែរ</h5>
+                <hr class="hr1">
+                <H5 class="about"> <b> ABOUT KHMER DANCE </b> </H5>
+                <p class="des" id="desciption" style="text-align: justify">របាំក៏ដូចជាតន្ត្រីនិង ល្ខោន ចម្រៀង កំណាព្យ ចម្លាក់ និង ទម្រង់សិល្បៈដទៃទៀតទាំងអស់ដែល គឺសុទ្ធតែជាតម្រូវការរបស់ជីវិតខ្មែរទាំងអស់ ។ ដោយហេតុហ្នឹងហើយ ទើបខ្មែរមានទម្លាប់ប្រើពាក្យថា ៖ ជីវិតគឺសិល្បៈ ហើយសិល្បៈគឺជីវិត នេះឯង ។ ខ្មែរត្រូវការរបស់ដើម្បីរាំថ្វាយអារក្សអ្នកតា...</p>
+                <input class="btn btn btn-secondary readM" type="button" value="READ MORE" data-toggle="modal" data-target="#exampleModal" onclick="about()">
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="b"></div>
+                <img class="d-block w-100 cover" src="img/tt21.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                    <div class="b"></div>
+                    <img class="d-block w-100 cover" src="img/tt20.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                    <div class="b"></div>
+                    <img class="d-block w-100 cover" src="img/tt22.jpg" alt="First slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="row secondMenu">
+        <div class="col-sm-12">
+            <a  href="t1-firstPage.html"> <b> ប្រវត្តិរបាំក្បាច់បុរាណ </b></a>
+            <a  href="t1-secondPage.html"><b> របៀបសំដែង </b></a>
+            <a  href="t1-thirdPage.html" style="border: 3px solid white"><b> ការហាត់រៀនក្បាច់របាំបុរាណខ្មែរ </b></a>
+            <a  href="t1-fourthPage.html"> <b> សំលៀកបំពាក់និងគ្រឿងតុបតែងលំអកាយ </b></a>
+            <a  href="t1-fifthPage.html"><b> ប្រភេទរបាំក្បាច់បុរាណ </b></a>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 60px;">
+        <div class="col-sm-12">
+                <h5 class="colHeader" style="margin-top: 50px;"> <b>ការហាត់រៀនក្បាច់របាំបុរាណខ្មែរ</b></h5>
+                <hr class="hr2">
+                <p class="abc">
+                    យើងខ្ញុំមិនអាចដឹងបានច្បាស់ទេថា នៅសម័យអង្គរ ពិធីរៀនសូត្ររបាំក្បាច់បុរាណនោះយ៉ាងណា ហើយវិធីសាស្រ្តជ្រើសរើសសិស្សអោយចូលរៀនដើម្បីបានក្លាយខ្លួនទៅជាទេវៈទាសីទៅតាមប្រាសាទនានានេះក៏មិនដឹងថាទៅធ្វើបាបណាដែរ ។ 
+                    <br><br>
+                    ប៉ុន្តែទោះជាយ៉ាងណាក៏ដោយ រហូតមកដល់បច្ចុប្បន្ននេះ យើងសង្កេតឃើញមាននៅសេសសល់និយមរបស់ជនជាតិខ្មែរ ដែលត្រូវតែយល់ថា បានរៀនសូត្របច្ចេកទេសរបាំក្បាច់បុរាណខ្មែរ ឬ របាំព្រះរាជទ្រព្យ និង នាំឲ្យមានរបៀបរៀបរយខាងផ្លូវកាយ ហើយដែលអាចជះឥទ្ធិពលដល់ការរៀបទៅឆាតទៅជាផង ដែលគេនិយាយប្រាប់ពាក្យថាអ្នករបៀប ព្រោះការសិក្សារបស់ឬថតបែបបុរាណនេះ នឹង នាំឱ្យរាងកាយទន់ភ្លន់សុភាពរាបសាគ្រប់សកម្មភាពនៃឥរិយាបថទាំងបួន ដេក ដើរ ឈរ អង្គុយ ប្រព្រឹត្តទៅសមរម្យមិនឆ្គង ឯផ្លូវចិត្តវិញក៏ស្រទន់ចេះយកសណ្ដោះប្រណីទាំងកាយវិការ និង ពាក្យសំដីដ៏ស្រគត់ស្រគំប្រកប ដោយការចេះដឹងគោរពប្រណីចាត់ទុកជាអ្នកមានសីលធម៌ក្នុងការរស់នៅ ។
+                </p>
+        </div>
+    </div>
+
+    <div id="container">
+        <p id="textBody">
+            បើតាមព័ត៌មានដែលយើងខ្ញុំទទួលបានពីគ្រូចាស់ៗដែលច្រើនតែរៀបរាប់ពីសម័យបុរាណដោយការចេះចាំថាតាមរយៈការនិទានតគ្នាតាំងពីសម័យលង្វែក សម័យឧដុង្គ រហូតដល់សម័យចតុមុខសព្វថ្ងៃនេះដោយសង្កត់ធ្ងន់លើសតវត្សទី 19 និងទី 20 នៃគ្រិស្តសករាជ ក្នុងរាជ្យព្រះបាទនរោត្ដម 1859-1904 ព្រះបាទស៊ីសុវត្ថិ 1904-1927 ព្រះបាទស៊ីសុវត្ថិមុនីវង្ស 1927-1941 នោះ បានឱ្យយើងខ្ញុំដឹងថា សិល្បៈសិស្សដែលមករៀនរបាំក្បាច់បុរាណខ្មែរ ឬរបាំព្រះរាជទ្រព្យ មានប្រភពដើមខុសគ្នាជាច្រើនដូចជា ៖ 
+            <br><br>
+            បុត្រីព្រះមហាក្សត្រ ឬ ព្រះញាតិវង្សដែលមាននិស្ស័យពីធម្មជាតិ និងមានព្រះទ័យស្រឡាញ់វិស័យសិល្បៈនេះ ។ ហើយមរតកនេះត្រូវបានបន្តរហូតមកក្រោយទៀតដែលយើងអាចមើលឃើញភស្តុតាង ជាក់ស្ដែងដូចយ៉ាងព្រះអង្គម្ចាស់ក្សត្រិយ៍ នរោត្តមបុប្ផាទេវី ព្រះរាជបុត្ររបស់ព្រះបាទ នរោត្តម សីហនុវរ័្មន ដែលទ្រង់បានសិក្សារៀនសូត្រ ប្រកបដោយទេពកោសល្យខ្ពស់ ព្រះអង្គបានក្លាយទៅជាតារាឯក ផ្នែករបាំព្រះរាជទ្រព្យដែលនាំឲ្យមានព្រះកិត្តិនាមល្បីល្បាញទាំងក្នុងឆាកជាតិ និង ក្នុងឆាកអន្តរជាតិទៀតផង ។
+        </p>
+    </div>
+
+    <div class="parallax"></div>
+    <div class="parallaxDiv">
+        <div>
+            <h5 class="colHeader" style="margin-top: 50px;"> <b>មូលដ្ឋាននៃការហាត់រៀនក្បាច់របាំបុរាណខ្មែរ</b></h5>
+            <hr class="hr2">
+            <div class="row rowRole">
+                <div class="col-sm-12">
+                    <img src="img/h7.jpg" class="imageRole">
+                </div>
+            </div>
+            <div class="row rowRole">
+                <div class="col-sm-12 colRole">
+                    <p class="a">
+                        មូលដ្ឋាននៃការហាត់រៀនក្បាច់របាំបុរាណខ្មែរមានដូចជា ៖ 
+                        <br>
+                        <ul class="abc" style="color: rgb(39, 39, 39);">
+                            <li>ការហាត់ពត់ម្រាមដៃ និង កដៃអោយទន់</li>
+                            <li>ការហាត់ពត់សន្លាក់កែងដៃ និង កដៃ អោយទន់ដោយអង្គុយបត់ជើងហើយយកម្រាមដៃដាក់ផ្ទាល់ដី ពីក្រោមជើងខាងក្រោម យកទៅវិញជើងសង្កត់លើម្រាមដៃនោះ ។ ហើយយកដៃម្ខាងទៀតវិញកែងដៃដែលដាក់ក្រោមជើងនោះឲ្យភ្លាត់បញ្ច្រាស និង សន្លាក់ធម្មជាតិឡើងរួចក៏ផ្លាស់ទៅម្ខាងទៀត ។</li>
+                            <li>ការហាត់ពត់ម្រាមដៃ កដៃ និង កែងដៃអោយទន់ ដោយអង្គុយបញ្ឈរជង្គង់ស្ដាំ យកកែងដៃស្ដាំដាក់លើជង្គង់ រួចជើងលើកជើងឆ្វេងដាក់សង្កត់លើកដៃស្ដាំ ។ ឯដៃឆ្វេងប្រឹងទាញម្រាម និង កដៃស្ដាំដែលដាក់ជើងឆ្វេងសង្កាត់ពីលើនោះឲ្យ ង នឹងទ្រាំឡើង រួចត្រឡប់ទៅម្ខាងទៀត ។</li>
+                            <li>ការហាត់ពត់ម្រាមដៃ កដៃ និង កែងដៃអោយទន់ដោយអង្គុយបញ្ឈរជង្គង់ទាំងពីរ យកម្រាមដៃទាំងដប់ស្រៈគ្នាជាប់ ហើយសណ្ដុំដៃទាំងពីរខាងមុខចំណងជើងដោយយកបាតដៃទៅមុខ ។ ដាក់កែងដៃទាំងពីរឲ្យចំជង្គង់ទាំងពីរ ហើយប្រឹងយកជង្គង់កៀបកែងដៃទាំងពីរឲ្យខ្លាំង ដើម្បីឲ្យម្រាមដៃ កដៃ និង កែងដៃនោះទន់បញ្ច្រាស់ពីសន្លាក់ដៃធម្មជាតិ ។</li>
+                            <li>អង្គុយចោងហោង យកបាតដៃទាំងពីរដាក់រៀបដី ដោយយកចុងម្រាមទៅមុខ រួចបង្កើតចុងជើង យកជង្គង់ទាំងពីររួចពិតកែងដៃទាំងពីរទៅមុខ ដើម្បីឲ្យកដៃ និង កែងដៃនោះទន់ ។</li>
+                            <li>អង្គុយពែនភ្នែន យកចុងជើងទាំងពីរដាក់ខ្មែរលើផ្លូវទាំងសងខាង រួចពកកាត់មុខ ហើយយកដៃទាំងពីររន្ធច្រើនដងខ្លួនឱ្យងើបឡើងដែលនាំឱ្យចង្កេះងបាន ។</li>
+                            <li>អង្គុយលុតជង្គង់ទាំងពីរ មុខក្រោយបណ្ដោយគ្នា ដាក់ជង្គង់ឆ្វេងទៅមុខ ។ ប្រឹងចង្កេះឡើង រួចយកដៃស្ដាំកែវទាញកជើងស្ដាំ ដែរនៅខាងក្រោយឱ្យខ្ពស់ឡើង ។ រួចដៃឆ្វេងលើដាក់ក្បាច់ ពត់ម្រាមដៃចូលក្នុងត្រឹមចិញ្ចើម រួចប្ដូរទៅប្រឆាំងទៀត ។</li>
+                            <li>ឈរលើកជើងខាងឆ្វេងឲ្យមានលំនឹង យកដៃស្ដាំគេក៏ជើងស្ដាំ ដែលបត់ទៅក្រោយឲ្យខ្ពស់ឡើង ប្រឹងចង្កេះ ហើយដៃឆ្វេងដាក់ក្បាច់ យកម្រាមដៃចូលក្នុងមានរវង់ត្រឹមចិញ្ចើម រួចប្ដូរទៅខាងទៀត ។</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row bg2">
+            <h5 class="abouthis" style="margin-top: 50px;"> <b>VIDEO</b></h5>
+            <hr class="hr2">
+        </div>
+        <div class="row bg2">
+            <div class="col-sm-12">                  
+                <div class="card" style="width: 60%; margin-bottom: 60px; margin-top: 50px; margin-left: auto; margin-right: auto;">
+                    <iframe class="card-img-top" height="410" src="https://www.youtube.com/embed/8ayodcUNEpQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text text-center">មូលដ្ឋាននៃការរៀនរាំរបាំបុរាណ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg2">
+            <div class="col-sm-12">
+                <div class="card" style="width: 60%; margin-bottom: 60px; margin-left: auto; margin-right: auto;">
+                    <iframe class="card-img-top" height="410" src="https://www.youtube.com/embed/RJtFLne43Vw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text text-center">ក្បាច់បាត ឆាបញ្ចុះ រាំដោយ សិស្សរបាំបុរាណ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 50px; margin-right: 0;">
+            <div class="col-sm-12">
+                <h5 class="type"> <b>CONTACT US</b></h5>
+                <hr class="hr2">
+                <div style="width: 100%; text-align: center; margin-top: 30px;">
+                    <a href="#"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
+                    <a href="#"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
+                    <a href="#"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
+                </div>
+                ⁣<p class="colTextPadding" style="text-align: center;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
+                <p style="font-size: 16px; text-align: center; margin-top: 20px;">Copyright &copy; Team o Nith</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <img style="width: 100%" id="imgBody">
+                    <p style="text-align: justify; margin-top: 30px;" id="modalBody1"></p>
+                    <br>
+                    <p style="text-align: justify" id="modalBody2"></p>
+                    <br> 
+                    <p style="text-align: justify" id="modalBody3"></p>
+                    <br><br>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:3000,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+            $('.carousel').carousel({
+                interval: 2000
+            })
+    
+    </script>
+</body>
+</html>

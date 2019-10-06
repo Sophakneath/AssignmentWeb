@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/firstPage.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/abouthis.js"></script>
+    <meta charset="utf-8">
+    <title>First Pages</title>
+    <style>
+       .parallax {
+            /* The image used */
+            background-image: url('./img/c7.jpg');
+            /* Set a specific height */
+            min-height: 500px; 
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .col-sm-12, .row, .bg2{
+            margin: 0;
+            padding: 0;
+        }
+
+        .rowTextFP{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .modal-content{
+            width: 800px; margin: auto;
+        }
+        .modal-body{
+            padding-left: 30px; padding-right: 30px;
+        }
+        .modal-title{
+            padding-left: 20px; 
+            padding-right: 20px; 
+        }
+
+        .modal-body>p{
+            font-family: 'Fasthand', serif;
+            line-height: 30px;
+            font-size: 13px;
+        }
+
+        .des, .typeDes, .colTextPadding, .card-text{
+            font-family: 'Fasthand', serif;
+            line-height: 30px;
+            text-align: justify;
+        }
+       
+    </style>
+</head>
+<body>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="row row1 fix">
+                    <div class="col-sm-12 menu">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg">
+                            <h5 class="bg logo navbar-brand"><b>LOGO</b></h5>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav" style="margin-left: 300px;">
+                                    <a class="nav-item nav-link active" href="firstPage.html"> <b> <i class="fa fa-home"></i> HOME </b></a>
+                                    <a class="nav-item nav-link active" href="testing.html"><b>ABOUT </b></a>
+                                    <a class="nav-item nav-link active" href="#"><b>CONTACT US </b></a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="title center d-none d-md-block">
+                    <h5 class="header">សិល្បៈរបាំខ្មែរ</h5>
+                    <hr class="hr1">
+                    <H5 class="about"> <b> ABOUT KHMER DANCE </b> </H5>
+                    <p class="des" id="desciption" style="text-align: justify">របាំក៏ដូចជាតន្ត្រីនិង ល្ខោន ចម្រៀង កំណាព្យ ចម្លាក់ និង ទម្រង់សិល្បៈដទៃទៀតទាំងអស់ដែល គឺសុទ្ធតែជាតម្រូវការរបស់ជីវិតខ្មែរទាំងអស់ ។ ដោយហេតុហ្នឹងហើយ ទើបខ្មែរមានទម្លាប់ប្រើពាក្យថា ៖ ជីវិតគឺសិល្បៈ ហើយសិល្បៈគឺជីវិត នេះឯង ។ ខ្មែរត្រូវការរបស់ដើម្បីរាំថ្វាយអារក្សអ្នកតា...</p>
+                    <input class="btn btn btn-secondary readM" type="button" value="READ MORE" data-toggle="modal" data-target="#exampleModal" onclick="about()">
+                </div>
+                  
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="b"></div>
+                    <img class="d-block w-100 cover" src="img/tt21.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                        <div class="b"></div>
+                        <img class="d-block w-100 cover" src="img/tt20.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                        <div class="b"></div>
+                        <img class="d-block w-100 cover" src="img/tt22.jpg" alt="First slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+         
+        <div class="bg1">
+            <h5 class="type"> <b>TYPE OF DANCE</b></h5>
+            <hr>
+            <div class="container cardType">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 cardPadding card2">
+                        <div class="card card1 text-center" style="width: 20rem;">
+                            <img src="img/cover3.jpg" class="card-img-top cardImg">
+                            <div class="card-body">
+                                <h6 class="cardText">របាំក្បាច់បុរាណ</h6>
+                                <hr class="hr2">
+                                <p class="typeDes">គឺជារបាំថ្លៃថ្នូរដែលសម្តែងសម្រាប់តែខ្សែររាជវង្ស ឬ អ្នកមានឋានៈបុណ្យសក្ដិធំៗក្នុងជួរមន្ត្រីរាជការប៉ុណ្ណោះ របាំបុរាណខ្មែរគឺជាការសម្ដែងបង្ហាញក្បាច់រាំដែលមានស្ទីលបែបខ្ពស់ដែលមានប្រភពចេញពីរាជវង្ស ។</p>
+                                <a href="t1-firstPage.html" class="btn btn-outline-secondary">See Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 cardPadding card2">
+                        <div class="card text-center" style="width: 20rem;">
+                            <img src="img/cover2.jpg" class="card-img-top cardImg">
+                            <div class="card-body">
+                                    <h6 class="cardText">របាំប្រពៃណីខ្មែរ</h6>
+                                    <hr class="hr2">
+                                    <p class="typeDes">របាំប្រពៃណីខ្មែរ គឺជារបាំដែលកើតឡើងពីក្បាច់រាំដែលបង្កើតដោយជនជាតិខ្មែរនៅតាមតំបន់ក្នុងខេត្តភូមិស្រុកដែលពួកគររស់នៅ ដែលរបាំប្រភេទនេះមានភាពពេញនិយមណាស់នៅក្នុងស្រទាប់ខ្មែរគ្រប់វណ្ណៈ ។</p>
+                                    <a href="t2-firstPage.html" class="btn btn-outline-secondary">See Detail</a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 cardPadding card2">
+                        <div class="card text-center" style="width: 20rem;">
+                            <img src="img/a1.jpg" class="card-img-top cardImg">
+                            <div class="card-body">
+                                    <h6 class="cardText">របាំប្រជាប្រិយខ្មែរ</h6>
+                                    <hr class="hr2">
+                                    <p class="typeDes">របាំដែលកើតឡើងដោយការច្នៃប្រឌិតចេញពីសម្លេងដូរតន្ត្រីបែបទំនើប ហើយជាប្រភេទរបាំដែលរពេញនិយម យកមករាំគ្រប់គ្នាក្នុងស្រទាប់ យុវវ័យខ្មែរ ដែលជាទូទៅរបាំនេះមានដូចជា ៖ រាំវង់ រាំក្បាច់ រាំសារ៉ាវ៉ាន់ ជាដើម ។ </p>
+                                    <a href="t3-firstPage.html" class="btn btn-outline-secondary">See Detail</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="parallax"></div>
+
+    <div class="parallaxDiv">
+        <div class="row rowTextFP">
+                <div class="col-sm-6" style="width: 100%; text-align: center; margin: auto">
+                    <img src="img/tt23.jpg" class="img1">
+                </div>
+                <div class="col-sm-6 colhis" width="100%">
+                    <h5 class="abouthis"> <b>HISTORY OF KHMER DANCE</b></h5>
+                    <hr class="hr2">
+                    <p class="colTextPadding">
+                        មិនខុសពីល្បែងប្រជាប្រិយនោះទេគឺឈួងបោះ, លាក់កាំងគ្រីរ, អង្គគួន (ពូជធំនៃដើមឈើព្រៃ), ស្តេចត្រាញ់ឬស្តេចជាច្រើនទៀតដែលជាវណ្ណៈដែលលេងដោយប្រជាជនខ្មែរក្នុងការប្រារព្ធពិធីប្រពៃណីជាពិសេសក្នុងពិធីអបអរឆ្នាំថ្មី … របាំដែលពេញនិយមគឺរាំវង់ រាំក្បាច់ គឺជាប្រភេទរបាំដែលកំពុងត្រូវបានគេពេញនិយមនៅក្នុងប្រទេសទាំងមូលសូម្បីតែនៅទីក្រុងក៏ដូចជានៅតាមជនបទតំបន់ភ្នំតំបន់ដីសណ្តឬតំបន់មាត់សមុទ្រ។ របាំប្រជាប្រិយខ្មែរទាំងនេះងាយនឹងត្រូវគេចងចាំរៀននិងបង្ហាញផងដែរ ...
+                    </p>
+                    <div class="text-center"><input type="button" class="btn btn-secondary" value="READ MORE" data-toggle="modal" data-target="#exampleModal" onclick="history()"></div>
+                </div>
+        </div>
+
+        <div class="row bg2">
+            <div class="col-sm-12" >
+                <h5 class="abouthis" style="margin-top: 50px;"> <b>VIDEO</b></h5>
+                <hr class="hr2">
+                <div class="card" style="width: 60%; margin-bottom: 60px; margin-top: 50px; margin-left: auto; margin-right: auto;">
+                    <iframe class="card-img-top" height="410" src="https://www.youtube.com/embed/zSKqN8vGC5Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text text-center">ការសំដែងរបាំអប្សរា</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 50px; margin-right: 0;">
+            <div class="col-sm-12">
+                <h5 class="type"> <b>CONTACT US</b></h5>
+                <hr class="hr2">
+                <div style="width: 100%; text-align: center; margin-top: 30px;">
+                    <a href="#"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
+                    <a href="#"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
+                    <a href="#"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
+                </div>
+                <p class="colTextPadding" style="text-align: center;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
+                <p style="font-size: 16px; text-align: center; margin-top: 20px;">Copyright &copy; Team o Nith</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <img style="width: 100%" id="imgBody">
+                <p style="text-align: justify; margin-top: 30px;" id="modalBody1"></p>
+                <br>
+                <p style="text-align: justify" id="modalBody2"></p>
+                <br> 
+                <p style="text-align: justify" id="modalBody3"></p>
+                <br><br>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:3000,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+            $('.carousel').carousel({
+                interval: 2000
+            })
+    </script>
+</body>
+</html>
