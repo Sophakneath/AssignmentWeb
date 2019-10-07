@@ -2,10 +2,149 @@
     text-align: center;
     margin: auto;
 }
-
-
 .kh_title{
-    font-family: 'KhmerTitle';
-    font-size: 40;
+    font-family: 'Moulpali', cursive;
+    color: brown;
+    text-align: center;
+}
+
+.kh_content{
+    font-family: 'Fasthand', serif;
+    text-align: justify;
+    line-height: 40px;
+}
+
+.white{
+    color: white;
+}
+
+.padding{
+    padding: 40px;
+}
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgb(0,0,0,0.5)),  url("../img/kh_music/c_pinpeat.png");
+    /* Set a specific height */
+    /* height: auto; */
+    min-height: 600px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+.img-box{
+    border-radius: 5px;
+    width: 90%;
+    height: calc(width*3/4);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 
 }
+
+.article-box-brown{
+    background: brown;
+    padding: 40px;
+}
+
+.article-box-beige{
+    padding: 40px;
+    background-color: burlywood;
+}
+
+.text-bg{
+    background-color: rgba(255,255,255,0.7);
+    margin: auto;
+}
+
+.swipetabnav{
+    background: brown;
+    padding: 20px;
+
+}
+
+.tab-bg{
+    background: rgba(255,255,255,0.9);
+}
+
+.parallax {
+    /* The image used */
+    
+    /* Set a specific height */
+    min-height: 100px; 
+    height: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    position: relative;
+}
+
+.v-center{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    /* height: 30%; */
+    margin: auto;
+}
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; }
+    .gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease; }
+    .gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+    
+    @media (max-width: 450px) {
+    .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    }
+    }
+    
+    @media (max-width: 400px) {
+    .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    }
+    }
