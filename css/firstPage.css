@@ -5,6 +5,14 @@
     src: local('/fonts/Khmer-Banteay-Srey'), url('/fonts/Khmer-Banteay-Srey.ttf') format('ttf');   
 }
 
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .about{
     color: white;
     margin-top: 60px;
@@ -18,7 +26,13 @@
     margin-top: 20px;
 }
 .abc{
-    margin-top: 30px; padding-left: 60px; padding-right: 60px; padding-bottom: 20px; font-size: 13px; text-align: justify; color: #898888;
+    margin-top: 30px; 
+    padding-left: 30px; 
+    padding-right: 30px; 
+    padding-bottom: 20px; 
+    font-size: 13px; 
+    text-align: justify; 
+    color: #898888;
 }
 
 .bgBenefit{
@@ -55,19 +69,12 @@
 }
 .bg1{
     border: 1px solid transparent;
-    padding-top: 50px;
+    padding: 0;
     margin: 0;
     background-color: #F5F5F5;
     padding-bottom: 60px;
 }
-.bg2{
-    background: #F5F5F5;
-    margin: 0;
-    border: 1px solid transparent;
-    padding-top: 30px;
-    margin: 0;
-    padding: 0;
-}
+
 .bg1>hr{
     background: #898888;
     height: 3px;
@@ -183,7 +190,7 @@
 .colHeader1{
     width: 100%;
     color: #898888;
-    margin-left: 50px;
+    margin-left: 30px;
     font-size: 20px;
     font-family: 'Moulpali', cursive;
 }
@@ -200,11 +207,10 @@
 }
 .colTextSP{
     font-size: 13px;
-    padding-left: 50px;
-    padding-right: 50px;
     color: #898888;
-    padding-top: 10px;
     text-align: justify;
+    padding-left: 30px; 
+    padding-right: 30px; 
 }
 
 .col-sm-12>a:hover{
@@ -426,8 +432,19 @@ h6{
     object-fit: cover;
     object-position: center;
 }
+.swipetabnav{
+    background: rgb(236, 100, 100);
+    padding: 20px;
+}
+.kh_title{
+    font-family: 'Moulpali', cursive;
+    color: white;
+    text-align: center;
+}
 
-
+.vdoTop{
+    height:380px;
+}
 
 
 

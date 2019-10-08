@@ -14,19 +14,40 @@
         <meta charset="utf-8">
         <title>Second Pages</title>
         <style>
-           .parallax {
-                /* The image used */
-                background-image: url('./img/t3-7.jpg');
+            .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+                color:rgb(236, 100, 100);
+                background-color: white;
+            }
     
-                /* Set a specific height */
-                min-height: 500px; 
-    
-                /* Create the parallax scrolling effect */
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+            .col-sm-12, .row, .bg2{
                 margin: 0;
+                padding: 0;
+            }
+            
+            #container{
+                position: absolute;
+                z-index: 1000;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.3);
+                width: 100%;
+                overflow: auto;
+            }
+        
+            #header1{
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-top: 170px;  
+                font-size: 20px;
+                font-family: 'Moulpali', cursive;
+            }
+
+            #textBody{
+                margin-left: 100px;
+                margin-right: 100px;   
+                font-family: 'Fasthand', serif;      
+                font-size: 13px;
+                line-height: 30px;        
+                text-align: justify;          
             }
     
             .col-sm-12, .row, .bg2{
@@ -40,10 +61,10 @@
             .modal-body{
                 padding-left: 30px; padding-right: 30px;
             }
-            .modal-title{
-                padding-left: 20px; 
-                padding-right: 20px; 
+            .mTitle, .modal-header{
                 font-family: 'Moulpali', cursive;
+                text-align: center;
+                width: 100%;
             }
 
             .modal-body>p{
@@ -80,7 +101,7 @@
                 padding-right: 30px;
             }
 
-            .abc, .colTextSP, .e{
+            .abc, .colTextSP, .e, .typeDes{
                 font-family: 'Fasthand', serif;
                 line-height: 30px;
                 text-align: justify; 
@@ -114,9 +135,9 @@
             <div class="title center d-none d-md-block">
                 <h5 class="header">សិល្បៈរបាំខ្មែរ</h5>
                 <hr class="hr1">
-                <H5 class="about"> <b> ABOUT KHMER DANCE </b> </H5>
+                <H5 class="about" style="font-size: 25px; font-family: 'Moulpali', cursive;"> <b> អំពីរបាំនៅប្រទេសកម្ពុជា </b> </H5>
                 <p class="des" id="desciption" style="text-align: justify">របាំក៏ដូចជាតន្ត្រីនិង ល្ខោន ចម្រៀង កំណាព្យ ចម្លាក់ និង ទម្រង់សិល្បៈដទៃទៀតទាំងអស់ដែល គឺសុទ្ធតែជាតម្រូវការរបស់ជីវិតខ្មែរទាំងអស់ ។ ដោយហេតុហ្នឹងហើយ ទើបខ្មែរមានទម្លាប់ប្រើពាក្យថា ៖ ជីវិតគឺសិល្បៈ ហើយសិល្បៈគឺជីវិត នេះឯង ។ ខ្មែរត្រូវការរបស់ដើម្បីរាំថ្វាយអារក្សអ្នកតា...</p>
-                <input class="btn btn btn-secondary readM" type="button" value="READ MORE" data-toggle="modal" data-target="#exampleModal" onclick="about()">
+                <input class="btn btn btn-secondary readM" style="font-size: 16px; font-family: 'Moulpali', cursive;" type="button" value="អានបន្ត" data-toggle="modal" data-target="#exampleModal" onclick="about()">
             </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -141,104 +162,261 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="row secondMenu">
-        <div class="col-sm-12">
-            <a  href="t3-firstPage.html" style="border: 3px solid white;"> <b> ប្រវត្តិរបាំប្រជាប្រិយខ្មែរ </b></a>
-            <a  href="t3-secondPage.html"><b> របៀបសំដែង </b></a>
-            <a  href="t3-thirdPage.html"><b> ប្រភេទរបាំប្រជាប្រិយខ្មែរ </b></a>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 60px;">
-        <div class="col-sm-12">
-                <h5 class="colHeader" style="margin-top: 50px;"> <b>ប្រវត្តិរបាំប្រជាប្រិយខ្មែរ</b></h5>
-                <hr class="hr2">
-                <p class="abc">
-                    មិនខុសអ្វីពីល្បែងប្រជាប្រិយចោលឈូង លាក់កន្សែង ចាប់កូនខ្លែង បោះអង្គុញ ស្ដេចចង់ ឬល្បែងល្បីឯទៀតដែលខ្មែរនិយមនាំគ្នាលេងកំសាន្តក្នុងពិធីបុណ្យប្រពៃណីនានា ពិសេសគឺបុណ្យចូលឆ្នាំ ។ របាំប្រជាប្រិយ រាំវង់ រាំក្បាច់ គឺជាប្រភេទរបាំដែលមានការនិយម ជាទូទៅនៅក្នុងទូទាំងប្រទេសទោះនៅទីក្រុង ក៏ដូចជាជនបទ នៅតំបន់ភ្នំ ក៏ដូចជានៅវាលទំនាប ឬក៏តំបន់មាត់សមុទ្រ ។ របាំប្រជាប្រិយខ្មែរនេះ ជារបស់ភេទរបាំដែលងាយរាំ ងាយចេះ ហើយងាយក្នុងការរៀបចំសំដែងទៀតផង ។ អាស្រ័យហេតុនេះ ទើបគេសង្កេតឃើញជនជាតិខ្មែរ តាំងពីព្រះរាជា នាម៉ឺនសព្វមុខមន្ត្រីរហូតដល់ប្រជារាស្រ្ត ទាំងក្មេង ទាំងចាស់ប្រុសស្រីចេះរាំរបាំនេះគ្រប់ៗគ្នា ។                        
-                </p>
-        </div>
-    </div>
 
-    <div class="parallax"></div>
- 
-    <div class="parallaxDiv">
-        <div class="row" style="padding-top: 60px;">
-            <div class="col-sm-3 col-12" style="width: 100%; text-align: center; margin: auto">
-                <img src="img/t3-8.jpg" class="img">
+    <ul class="swipetabnav nav  nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist" style="overflow-x: auto;">
+        <li class="nav-item">
+            <a class="nav-link active kh_title white" id="pills-his-tab" data-toggle="pill" href="#pills-his" role="tab" aria-controls="pills-home" aria-selected="true">ប្រវត្តិរបាំប្រជាប្រិយខ្មែរ</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link kh_title white" id="pills-how-tab" data-toggle="pill" href="#pills-how" role="tab" aria-controls="pills-instruments" aria-selected="false">របៀបសំដែង</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link kh_title white" id="pills-pra-tab" data-toggle="pill" href="#pills-pra" role="tab" aria-controls="pills-play" aria-selected="false">ប្រភេទរបាំប្រជាប្រិយខ្មែរ</a>
+        </li>
+    </ul>
+          
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-his" role="tabpanel" aria-labelledby="pills-his-tab">       
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                                <h5 class="colHeader" style="margin-top: 30px;"> <b>ប្រវត្តិរបាំប្រជាប្រិយខ្មែរ</b></h5>
+                                <hr class="hr2">
+                                <p class="abc">
+                                    មិនខុសអ្វីពីល្បែងប្រជាប្រិយចោលឈូង លាក់កន្សែង ចាប់កូនខ្លែង បោះអង្គុញ ស្ដេចចង់ ឬល្បែងល្បីឯទៀតដែលខ្មែរនិយមនាំគ្នាលេងកំសាន្តក្នុងពិធីបុណ្យប្រពៃណីនានា ពិសេសគឺបុណ្យចូលឆ្នាំ ។ របាំប្រជាប្រិយ រាំវង់ រាំក្បាច់ គឺជាប្រភេទរបាំដែលមានការនិយម ជាទូទៅនៅក្នុងទូទាំងប្រទេសទោះនៅទីក្រុង ក៏ដូចជាជនបទ នៅតំបន់ភ្នំ ក៏ដូចជានៅវាលទំនាប ឬក៏តំបន់មាត់សមុទ្រ ។ របាំប្រជាប្រិយខ្មែរនេះ ជារបស់ភេទរបាំដែលងាយរាំ ងាយចេះ ហើយងាយក្នុងការរៀបចំសំដែងទៀតផង ។ អាស្រ័យហេតុនេះ ទើបគេសង្កេតឃើញជនជាតិខ្មែរ តាំងពីព្រះរាជា នាម៉ឺនសព្វមុខមន្ត្រីរហូតដល់ប្រជារាស្រ្ត ទាំងក្មេង ទាំងចាស់ប្រុសស្រីចេះរាំរបាំនេះគ្រប់ៗគ្នា ។                        
+                                </p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="parallax" style="background-image: url('./img/t3-7.jpg'); min-height: 300px;"></div>
+                 
+                <div class="parallaxDiv">
+                    <div class="container">
+                        <div class="row" style="padding-top: 60px;">
+                            <div class="col-lg-3 col-sm-12 col-12" style="width: 90%; margin: auto; text-align: center; padding-left: 10px; padding-right: 10px; ">
+                                <img src="img/t3-8.jpg" class="img">
+                            </div>
+                            <div class="col-lg-3 col-sm-12 col-12" style="width: 90%; height: 600px; margin: auto; text-align: center; padding-left: 10px; padding-right: 10px;">
+                                <img src="img/t3-9.jpg" class="img">
+                            </div>
+                            <div class="col-lg-6 col-sm-12 col-12" width="100%">
+                                <p class="colTextSP" style="padding-top: 20px;">
+                                    ឯពាក្យថារាំវង់ គឺជាលក្ខណៈពិសេសមួយសម្រាប់សម្គាល់រូបភាបនៃរបាំនេះ ពោលគឺពេលគេនាំគ្នារាំបន្តគ្នាជារង្វង់មូល ។ ហើយរបាំសម្រាប់រាំលេងកំសាន្ត ឬ ក៏រាំដើម្បីបំបាត់ការនឿយហត់ ក្រោយពីការបំពេញពលកម្មនានារួច ។                        
+                                    <br><br>
+                                    ប្រវត្តិកំណើតនៃរបាំរាំវង់នេះវិញ បើយើងពឹងផ្អែក លើឯកសារសរសេរដែលមានបន្តិចបន្តួច នៅពឹងផ្អែកលើភាពជាក់ស្តែង ក្នុងជីវិតដែលមានប្រព្រឹត្តដោយសក់យើងសព្វថ្ងៃនេះ យើងជឿជាក់ថា សិល្បៈរាំវង់នេះមានអាយុច្រើនសតវត្សមកហើយ នៅលើទឹកដីនៃមាតុភូមិកម្ពុជានេះ ។  ព្រោះកម្មពីបុព្វេដ៏យូរលង់ ទាំងជនជាតិខ្មែរ និងជនជាតិឯទៀត ដែលស្ថិតក្នុងអំបូរជាមួយគ្នាដូចជា ព្នង គ្រឹង ទំពួន ត្រូវមានការទាក់ទងនឹងការរាំជាវង់ ឬ ជារង្វង់មូលនេះជាច្រើន ។
+                                    <br><br>
+                                    បងប្អូនជាតិខ្មែរ លើនៅភូមិភាគឥសាននៃប្រទេស ឬ តំបន់ព្រៃភ្នំ នៃភូមិភាគដទៃទៀតនិយមរាំលេងកម្សាន្តនៅជុំវិញភ្នក់ភ្លើងនាពេលរាត្រី ។ ទម្លាប់រាំវង់ជុំវិញភ្នក់ភ្លើងនេះ មានអាយុច្រើនពាន់ឆ្នាំមកហើយ ហើយនៅមានសេសសល់រហូតដល់សព្វថ្ងៃនេះ ។ ក្នុងពិធីលៀងអារក្ស ឬ ឡើងអ្នកតា ( ជំនឿខ្មែរដើម មានតាំងពីយូរលង់ មុនសម័យដែលព្រហ្មញ្ញសាសនា និង ព្រះពុទ្ធសាសនា ហូរចូលមកក្នុងតំបន់ជ្រោយសុវណ្ណភូមិ ពោលគឺតាំងពីមុន 309 ឆ្នាំមុនគ្រិស្តសករាជ “ព្រះតេជគុណប៉ាងខាត់”…) ជនជាតិខ្មែរ តែងតែនាំគ្នាសង់រោងតូចមួយដោយធ្វើ រាជវត្តិព័ទ្ធជុំវិញ ហើយរូបមេមត់ (អ្នកចូលរូប) តែងតែរាំជារង្វង់មូលនៅជុំវិញរងនោះក្នុងពេល ប្រារព្ធពិធីពិធីលាងអារក្សនេះ ។
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div style="width: 100%; margin-top: 10px; padding-top: 20px;">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img src="img/t3-3.png" class="imageRole">
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 40px;">
+                                <div class="col-sm-6 colRole" style="border-right: 2px solid #898888;">
+                                    <p style="font-size: 13px;" class="e">
+                                        លើសពីនេះទៅទៀត បងប្អូនជនជាតិ ព្រៅ ព្នង គ្រឹង ទំពួន នៅប្រកាន់ខ្ជាប់ទំនៀមទម្លាប់ រាំវង់ភូមិថ្មី ដែលភាសាជនជាតិនិយាយថា រាំវង់ស្រុកហាន់ទើម ។ របាំរាំវង់ភូមិថ្មីនេះគេមានទម្លាប់ធ្វើនៅក្នុងពេលប្ដូរភូមិពីភូមិចាស់ទៅរស់នៅក្នុងភូមិថ្មី ។ តាមធម្មតាក្នុងរយៈពេលពី 3 ទៅ 5 ពីឆ្នាំមុននឹងប្ដូរភូមិ ឮ ចាកចេញពីភូមិចាស់ មេកន្ទ្រាញនិងចាស់ទុំក្នុងភូមិ តែងនាំគ្នាធ្វើពិធីផ្សងទៅតាមជំនឿរបស់ខ្លួនដើម្បីរកកន្លែងដីថ្មី ដែលមានលក្ខណៈភូមិសាស្ត្រល្អ មានទឹកគ្រប់គ្រាន់និងជាកន្លែងដែលអាចការពារ សន្តិសុខជូនញាតិមិត្តក្នុងស្រុកភូមិបានល្អ ។ ពេលផ្សងរើសយកដីថ្មីបានហើយ ទើបគេនាំគ្នាធ្វើពិធីកំណត់ឆ្នាំសម្រាប់រស់នៅ គឺធ្វើឲ្យដឹងថា តើពួកគេអាចរស់នៅបានប៉ុន្មានឆ្នាំ នៅក្នុងភូមិថ្មីនេះ ។ ពិធីកំណើតឆ្នាំសម្រាប់រស់នៅនេះ ប្រព្រឹត្តទៅដោយមេកន្ទ្រាញនិងចាស់ទុំក្នុងភូមិយកប្រទាលមុខចិត្តទម្លាក់ មកលើដីចំនួន 7 ជំនិត ។ បើប្រទាលនឹងត្រឡប់ប៉ុន្មានចំណុច នោះគេជឿថា គេអាចរស់ក្នុង ភូមិថ្មីនោះបានប៉ុណ្ណឹងឆ្នាំដែរ ។ ពោលគឺតាមជំនួយចំណិតប្រទេសដែលក្រឡាប់នោះ ។ ដូចជាបើប្រទាកក្រឡស 3 ឬ 5 ចំណុច នោះគេអាចរស់នៅទីនោះបាន 3 ឬ 5 ឆ្នាំដែរ ។ ហើយជំនឿនេះ មានរៀងរហូតតាំងពីបុព្វេរយូរលុងណាស់មកហើយរហូតដល់សព្វថ្ងៃនេះ ។ ពេលធ្វើពិធីផ្សងរកដីថ្មី បានហើយមេកន្ទ្រាញ ក៏ប្រកាសឲ្យអ្នកភូមិអ្នកស្រុកនោះលើសពីភូមិចាស់ទៅរស់នៅក្នុងផ្ទះសម័យនៅភូមិថ្មី ។ ពេលនាំគ្នាចូលទៅភូមិថ្មីជាដំបូងគេនាំគ្នាប្រារព្ធពិធីសំដែងរបាំរបស់ភូមិថ្មី នេះមុនគេបង្អស់ ។ អ្នកស្រុកអ្នកភូមិ មានស្រី មានប្រុស នាំគ្នារាំជាគូ តាមប្រពៃណីពីដូនតា តៗ គ្នារហូតដល់បច្ចុប្បន្ននេះ ដែលមានជំនឿថា នឹងនាំឲ្យគេគ្រប់គ្នាមានសេចក្តីសុខចម្រើន ។
+                                        <br><br>
+                                        បើតាមឯកសារខ្លះដែលនៅសល់ នឹងតាមព័ត៌មាន ដែលយើងទទួលបានពីចាស់ទុំជាច្រើនបានបញ្ជាក់ថា នៅប្រទេសកម្ពុជារបាំប្រជាប្រិយ រាំវង់ រាំក្បាច់
+                                    </p>
+                                </div>
+                                <div class="col-sm-6 colRole" style="border-left: 2px solid #898888">
+                                    <p style="font-size: 13px;" class="e">
+                                        នេះបានរីកចម្រើនយ៉ាងខ្លាំងនៅក្នុងសតវត្សទី 20 នេះ ។ ពិសេសគឺតាំងពីពេលដែលចលនាខ្មែរឥស្សរៈដែលកើតមាននៅគ្រប់តំបន់ក្នុងប្រទេស និងនៅក្នុងជីវពលនារីក្លាហាន ក្រោកឡើងដើម្បីបណ្ដេញអាណានិគមបារាំង ដើម្បីទាមទារឯករាជ្យជូនជាតិមាតុភូមិនៅមក ហើយដែលគេអាចឃើញសេសសល់នូវបទចម្រៀងរាំវង់មួយចំនួនដែលអាចជាផុសតាង ឬ ជាអនុស្សាវរីយ៍ នៃសម័យកាលនោះឯង ។ ហើយក៏ប្រហែលនៅក្នុងពេលដែលឥទ្ធិពលនៃពាក្យបរទេស ដូចជាពាក្យថា រាំទ្បាំថូន ឬ ឡក ឡាំថូន ថនគឺស្គរ ត្រូវខ្មែរយកមកប្រើ ព្រោះពេលនោះកងទ័ពខ្មែរឥស្សរៈ ដែលបោះទីតាំងក្នុងព្រៃជ្រៅៗ តំបន់ភ្នំដងរែក តំបន់ជ្រាវឱរ៉ាល់ ភ្នំក្រវាញ តំបន់ភាគឦសាននៃប្រទេស ដែលអាចចងសម្ព័ន្ធជាមួយឥស្សរឡាវ ឬតំបន់មាត់សមុទ្រដី ច្រើននាំគ្នាលេងរាំវង់ដោយប្រើតែស្គរដៃមួយប៉ុណ្ណោះ នឹងរៀបចំរាងដែលមានលក្ខណៈងាយស្រួលក្នុងការកំសាន្តតាមកាលៈទេសៈនៃការតស៊ូ និងការរស់នៅដោយយកព្រៃស្រូវជាមូលដ្ឋានបង្អែក ។ សូមបញ្ជាក់ថា ស្គរដៃនេះជាស្គរដៃនៃវង់ភ្លេងអារក្ស ឬវង់ភ្លេងប្រពៃណីភ្លេងការ របស់ជនជាតិខ្មែរដែលមានកំណើតរាប់ពាន់ឆ្នាំមកហើយ ។
+                                        <br><br>
+                                        គឺតាំងពីពេលស្រុកខ្មែរបានឯករាជ្យ ក្រោមព្រះរាជកិច្ចដឹកនាំ នៃព្រះករុណាព្រះបាទនរោត្តមសីហនុវរ្ម័នថ្ងៃទី 6 វិច្ឆិកាឆ្នាំ 1953 មក ប្រទេសជាតិនិងប្រជារាស្ត្រមានសេរីភាពគ្រប់គ្រាន់ ។ របាំប្រជាប្រិយ រាំវង់ រាំក្បាច់ ក៏បានរីកចម្រើនយ៉ាងខ្លាំងក្លា នោះគឺនៅទីកន្លែងណាខ្លះ គេរាំជាមួយស្គរដៃពេលខ្លះគេរាំជាមួយវង់ភ្លេងខ្មែរ ដែលមានឧបករណ៍ ស្គរ ទ្រ រនាត និងឧបករណ៍ជាច្រើនផ្សេងទៀតរហូតដល់វង់សម័យតន្ត្រីសម័យយ៉ាងទំនើប ដែលយើងឃើញរហូតមកដល់សព្វថ្ងៃនេះផង ។
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 30px; padding-top: 30px; margin-right: 0; background-color: whitesmoke">
+                        <div class="col-sm-12">
+                            <h5 class="type"> <b>CONTACT US</b></h5>
+                            <hr class="hr2" >
+                            <div style="width: 100%; text-align: center; margin-top: 30px;">
+                                <a href="#"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
+                                <a href="#"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
+                                <a href="#"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
+                            </div>
+                            <p class="colTextPadding" style="text-align: center;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
+                            <p style="font-size: 16px; text-align: center; margin-top: 20px;">Copyright &copy; Team o Nith</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="tab-pane fade" id="pills-how" role="tabpanel" aria-labelledby="pills-how-tab">
+            <div class="container">    
+                <div class="row">                
+                    <div class="col-sm-12">
+                            <h5 class="colHeader" style="margin-top: 30px;"> <b>របៀបសំដែង</b></h5>
+                            <hr class="hr2">
+                            <p class="abc">
+                                ដូចបានជម្រាបខាងលើមកហៅថា រាំវង់ រាំក្បាច់ ក៏ជារបាំប្រជាប្រិយខ្មែរនេះ មានលក្ខណៈងាយស្រួល ងាយចេះ ទាំងក្បាច់ក្បូរ ប្រើដៃ ជើង ក ចង្កេះ ទៀតសោះ ក៏សាមញ្ញណាដែរ ។ ឯចង្វាក់វិញមិនយឺតពេក ក៏មិនជាប់ពេលដែល គឺបើស្ដាប់សំឡេងស្គរដៃឬ ប៉ាក់ ពើង ប៉ាក់ ឬក៏ តាក់ ទីង តាក់ យ៉ាងនេះ ។ ក្នុងពេលរាំទាំងស្រីទាំងប្រុស ត្រូវបោះជំហាន ឆ្វេងស្តាំទៅមុខដោយស្រីរាំនៅខាងមុខ ប្រុសរាំពីក្រោយបន្តគ្នា ឬ ពេលខ្លះរកជាងគ្នា ឬ ជំរុញអោយដូគូក៏មាន ។ ឯដៃត្រូវ ជីប ពីក្រោមហើយលើកចំពីមុខទៅ លា ខាងលើ បញ្ច្រាសគ្នា ម្តងឆ្វេងម្តងស្តាំ ហើយឡៃដៃ និងជើងនោះ ក៏ឲ្យបញ្ចាស់គ្នាផងដែរ គឺបានឈាន ជើងស្ដាំទៅមុន ទៅលើកដៃឆ្វេង ហើយបើឈានជើងឆ្វេងមុន ត្រូវលើកដៃស្ដាំ ហើយគេរាំធ្វើដំណើរទៅមុខ បីជំហានរួចគោះជើងមកខាងក្រោយ មួយ ក៏មាន ហើយចេះតែបន្តយ៉ាងនេះជារវង់មូលរហូតទៅ ។
+                            </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-3 col-12" style="width: 100%; text-align: center; margin: auto; height: 600px; ">
-                <img src="img/t3-9.jpg" class="img">
-            </div>
-            <div class="col-sm-6 colAlign" width="100%">
-                <p class="colTextSP">
-                    ឯពាក្យថារាំវង់ គឺជាលក្ខណៈពិសេសមួយសម្រាប់សម្គាល់រូបភាបនៃរបាំនេះ ពោលគឺពេលគេនាំគ្នារាំបន្តគ្នាជារង្វង់មូល ។ ហើយរបាំសម្រាប់រាំលេងកំសាន្ត ឬ ក៏រាំដើម្បីបំបាត់ការនឿយហត់ ក្រោយពីការបំពេញពលកម្មនានារួច ។                        
+           
+            <div id="container" style="height: 500px;">
+                <p id="textBody" style="margin-top: 160px;">
+                    ឯចង្វាក់ភ្លេងរាំវង់វិញ ជាទូទៅពេលចាប់ផ្ដើម ច្រើនតែសិទ្ធិក្នុងចង្វាក់ និងឬស្មើធម្មតា លុះជិតចប់បទនីមួយៗ ក្រុមតន្ត្រីច្រើនប្រគុំរន្ធើនឡើងៗ ញាប់ឡើងៗ រហូតដល់ចប់ ។
                     <br><br>
-                    ប្រវត្តិកំណើតនៃរបាំរាំវង់នេះវិញ បើយើងពឹងផ្អែក លើឯកសារសរសេរដែលមានបន្តិចបន្តួច នៅពឹងផ្អែកលើភាពជាក់ស្តែង ក្នុងជីវិតដែលមានប្រព្រឹត្តដោយសក់យើងសព្វថ្ងៃនេះ យើងជឿជាក់ថា សិល្បៈរាំវង់នេះមានអាយុច្រើនសតវត្សមកហើយ នៅលើទឹកដីនៃមាតុភូមិកម្ពុជានេះ ។  ព្រោះកម្មពីបុព្វេដ៏យូរលង់ ទាំងជនជាតិខ្មែរ និងជនជាតិឯទៀត ដែលស្ថិតក្នុងអំបូរជាមួយគ្នាដូចជា ព្នង គ្រឹង ទំពួន ត្រូវមានការទាក់ទងនឹងការរាំជាវង់ ឬ ជារង្វង់មូលនេះជាច្រើន ។
+                    ចំណែកខាងរាំក្បាច់វិញ ក៏មានលំនាំប្រហាក់ប្រហែលគ្នាដែរ និងក្បាច់រាំវង់ដែ រគឺដៃត្រូវ ជីប ពីក្រោម ហើយវាលើខ្ពស់ឡើង រួចទៅ លា នៅខាងលើ ខាងឆ្វេងម្ដង ទៅស្ដាំដង ប្ដូរវេនគ្នា ដើម្បីអោយបញ្ច្រាសគ្នា និង ជើងដែលបោះឈូកខ្វែងគ្នាឈានទៅមុខនោះផង ។ ពោលគឺបើបោះជើងស្តាំឈានទៅមុខខ្វែងជើងឆ្វេងដែលទ្រទម្រង់ដងខ្លួន ដៃឆ្វេងដែល ជីប ពីក្រោម ត្រូវវាលើកឡើងខ្ពស់លើ ឡើងលើត្រឹមចុងចិញ្ចើម ហើយ លា ទៅខាងឆ្វេង ។ លុះដល់ឈានជើងឆ្វេងទៅមុនខ្វែងនឹងជើងស្ដាំ ដែលទ្រទម្ងន់ដងខ្លួនវិញ នោះដៃស្ដាំដែល ជីប នៅខាងក្រោមត្រូវលើកខ្ពស់ឡើងរួច លា ទៅខាងស្ដាំវិញម្ដង ។ ធ្វើចលនាដើររាំយ៉ាងនេះក្នុងដំណើររាំឈានទៅមុខ ជារវង់មូលដូចរាំផងដែរ ខុសតែចង្វាក់នោះយូរជាង គឺបើស្ដាប់ជើងក៏ឃើញ តាក់ ទីង ឬ ប៉ាក់ ពើង ប៉ាក់ យ៉ាងនេះ ។ ឯការតុបតែងលំអរសម្រាប់រាំវិញមានលក្ខណៈសាមញ្ញបំផុត គឺមានតែទីលានស្អាត និងតុដាក់ផ្កាមួយដែលគេចាត់ទុកជាស្នូលកណ្ដាលប៉ុណ្ណោះ ។ ប៉ុន្តែសម័យថ្មីនេះឃើញគេមានតុបតែងលម្អភ្លើង ឬអ្វីៗផ្សេងទៀតទៅតាមភាពសម្បូរបែបរបស់កន្លែងនីមួយៗទៀតផង ។                    
                     <br><br>
-                    បងប្អូនជាតិខ្មែរ លើនៅភូមិភាគឥសាននៃប្រទេស ឬ តំបន់ព្រៃភ្នំ នៃភូមិភាគដទៃទៀតនិយមរាំលេងកម្សាន្តនៅជុំវិញភ្នក់ភ្លើងនាពេលរាត្រី ។ ទម្លាប់រាំវង់ជុំវិញភ្នក់ភ្លើងនេះ មានអាយុច្រើនពាន់ឆ្នាំមកហើយ ហើយនៅមានសេសសល់រហូតដល់សព្វថ្ងៃនេះ ។ ក្នុងពិធីលៀងអារក្ស ឬ ឡើងអ្នកតា ( ជំនឿខ្មែរដើម មានតាំងពីយូរលង់ មុនសម័យដែលព្រហ្មញ្ញសាសនា និង ព្រះពុទ្ធសាសនា ហូរចូលមកក្នុងតំបន់ជ្រោយសុវណ្ណភូមិ ពោលគឺតាំងពីមុន 309 ឆ្នាំមុនគ្រិស្តសករាជ “ព្រះតេជគុណប៉ាងខាត់”…) ជនជាតិខ្មែរ តែងតែនាំគ្នាសង់រោងតូចមួយដោយធ្វើ រាជវត្តិព័ទ្ធជុំវិញ ហើយរូបមេមត់ (អ្នកចូលរូប) តែងតែរាំជារង្វង់មូលនៅជុំវិញរងនោះក្នុងពេល ប្រារព្ធពិធីពិធីលាងអារក្សនេះ ។
+                    នៅក្នុងប្រភេទសិល្បៈរបាំប្រជាប្រិយ នៅប្រទេសកម្ពុជាយើងនេះ ក្រៅពីរាំវង់ និង រាំក្បាច់ ដែលជាមេរកបានមូលដ្ឋានរបស់ជនជាតិខ្មែរនោះនៅមាន ឡាំលាវ និងសារ៉ាវ៉ាន់ ថែមទៀត ដែលមានប្រជាប្រិយភាពធំធេង ហើយមានការនិយមរាំឆ្លូកគ្នាជាមួយរបាំរាំវង់ និងរាំក្បាច់ជានិច្ចនោះផង ។        
                 </p>
             </div>
-        </div>
-        <div style="background-color: #F5F5F5; width: 100%; margin-top: 30px; padding-top: 20px;">
-            <div class="row rowRole">
+            
+            <div class="parallax" style="background-image: url('./img/t3-12.jpg'); min-height: 500px;"></div>
+            <div class="parallaxDiv" style="height: 500px;">
+            <div class="container" style="margin-bottom: 40px;">
+                <div class="row" style="padding-top: 30px;">
+                        <div class="col-sm-6" style="width: 100%; text-align: center; margin: auto">
+                            <img src="img/t3-11.jpg" class="img1">
+                        </div>
+                        <div class="col-sm-6" width="100%">
+                            <p class="colTextSP" style="margin-top: 20px;">
+                                ចំណែកខាងពេលវេលា និង ពិធីដែលរាំរបាំប្រជាប្រិយសម្ដែងវិញ គឺមានលក្ខណៈទូលំទូលាយណាស់ជាទូទៅគេច្រើនរាំក្នុងពិធីបុណ្យចូលឆ្នាំប្រពៃណីខ្មែរជាតិទូទៅទូទាំងប្រទេស ហើយមានកន្លែងខ្លះឬភូមិស្រុកខ្លះរាំលេងសប្បាយ រាប់ខែមុនពេលចូលឆ្នាំ និងរាំលេងរាប់ខែ ក្រោយពេលចូលឆ្នាំទៀតផង ដូចជានៅភូមិអន្លង់រមៀតក្នុងខេត្តកណ្ដាល ស្ថិតមិនឆ្ងាយប៉ុន្មានពីរាជធានីភ្នំពេញនេះជាដើម ។ គេរាំលេងកម្សាន្តក្នុងពិធីអាពាហ៍ពិពាហ៍ មង្គលការកូនប្រុសស្រី ពិធីជប់លៀងពិធីបុណ្យតាមគ្រួសារ ឬ ក៏គ្រាន់តែកម្សាន្ត ពេលជួបជុំញាតិមិត្តជិតឆ្ងាយ ឬ ក៏រាំដើម្បីបំបាត់ការនឿយហត់ក្រោយពេលបំពេញ ពលកម្មនានាថែមទៀតផង ។ រហូតមកដល់សព្វថ្ងៃនេះ គេសង្កេតឃើញរបាំប្រជាប្រិយ រាំវង់ រាំក្បាច់ ឡាំលាវ សារ៉ាវ៉ាន់ ត្រូវបានគេនិយមរាំលេងនៅតាមរង្គសាលនានាលាយចម្រុះនិងក្បាច់របាំបរទេសនានាជារៀងរាល់រាត្រីផង ។
+                                បើតាមព័ត៌មាន រូបស្រីរបាំ និង រូបហនុមាណកាន់ដំបងនេះ ត្រូវគេគាស់យកបានក្នុងបរិវេណវត្តគំនូរ ដែលស្ថិតនៅចំកណ្ដាលទីតាំងរាជធានីរាជាណាចក្រនគរភ្នំឯង ហើយក៏ដោយសារតឹកតាងនេះហើយ ដែលនាំឲ្យយើងមានការសម្តែងថា របាំក្បាច់បុរាណ ឬ របាំព្រះរាជាទ្រព្យនេះប្រហែលជាបានចាប់កំណើតលើទឹកដីកម្ពុជានេះតាំងពីសម័យនគរភ្នំមកម្លេះពោលគឺការចំលងតាមបែបផែនរបាំឥណ្ឌា ។                             
+                            </p>
+                        </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 30px; margin-right: 0; background-color: whitesmoke">
                 <div class="col-sm-12">
-                    <img src="img/t3-3.png" class="imageRole">
+                    <h5 class="type"> <b>CONTACT US</b></h5>
+                    <hr class="hr2" >
+                    <div style="width: 100%; text-align: center; margin-top: 30px;">
+                        <a href="#"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
+                        <a href="#"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
+                        <a href="#"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
+                    </div>
+                    <p class="colTextPadding" style="text-align: center;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
+                    <p style="font-size: 16px; text-align: center; margin-top: 20px;">Copyright &copy; Team o Nith</p>
                 </div>
             </div>
-            <div class="row rowRole" style="padding-bottom: 40px;">
-                <div class="col-sm-6 colRole" style="border-right: 2px solid #898888;">
-                    <p style="font-size: 13px;" class="e">
-                        លើសពីនេះទៅទៀត បងប្អូនជនជាតិ ព្រៅ ព្នង គ្រឹង ទំពួន នៅប្រកាន់ខ្ជាប់ទំនៀមទម្លាប់ រាំវង់ភូមិថ្មី ដែលភាសាជនជាតិនិយាយថា រាំវង់ស្រុកហាន់ទើម ។ របាំរាំវង់ភូមិថ្មីនេះគេមានទម្លាប់ធ្វើនៅក្នុងពេលប្ដូរភូមិពីភូមិចាស់ទៅរស់នៅក្នុងភូមិថ្មី ។ តាមធម្មតាក្នុងរយៈពេលពី 3 ទៅ 5 ពីឆ្នាំមុននឹងប្ដូរភូមិ ឮ ចាកចេញពីភូមិចាស់ មេកន្ទ្រាញនិងចាស់ទុំក្នុងភូមិ តែងនាំគ្នាធ្វើពិធីផ្សងទៅតាមជំនឿរបស់ខ្លួនដើម្បីរកកន្លែងដីថ្មី ដែលមានលក្ខណៈភូមិសាស្ត្រល្អ មានទឹកគ្រប់គ្រាន់និងជាកន្លែងដែលអាចការពារ សន្តិសុខជូនញាតិមិត្តក្នុងស្រុកភូមិបានល្អ ។ ពេលផ្សងរើសយកដីថ្មីបានហើយ ទើបគេនាំគ្នាធ្វើពិធីកំណត់ឆ្នាំសម្រាប់រស់នៅ គឺធ្វើឲ្យដឹងថា តើពួកគេអាចរស់នៅបានប៉ុន្មានឆ្នាំ នៅក្នុងភូមិថ្មីនេះ ។ ពិធីកំណើតឆ្នាំសម្រាប់រស់នៅនេះ ប្រព្រឹត្តទៅដោយមេកន្ទ្រាញនិងចាស់ទុំក្នុងភូមិយកប្រទាលមុខចិត្តទម្លាក់ មកលើដីចំនួន 7 ជំនិត ។ បើប្រទាលនឹងត្រឡប់ប៉ុន្មានចំណុច នោះគេជឿថា គេអាចរស់ក្នុង ភូមិថ្មីនោះបានប៉ុណ្ណឹងឆ្នាំដែរ ។ ពោលគឺតាមជំនួយចំណិតប្រទេសដែលក្រឡាប់នោះ ។ ដូចជាបើប្រទាកក្រឡស 3 ឬ 5 ចំណុច នោះគេអាចរស់នៅទីនោះបាន 3 ឬ 5 ឆ្នាំដែរ ។ ហើយជំនឿនេះ មានរៀងរហូតតាំងពីបុព្វេរយូរលុងណាស់មកហើយរហូតដល់សព្វថ្ងៃនេះ ។ ពេលធ្វើពិធីផ្សងរកដីថ្មី បានហើយមេកន្ទ្រាញ ក៏ប្រកាសឲ្យអ្នកភូមិអ្នកស្រុកនោះលើសពីភូមិចាស់ទៅរស់នៅក្នុងផ្ទះសម័យនៅភូមិថ្មី ។ ពេលនាំគ្នាចូលទៅភូមិថ្មីជាដំបូងគេនាំគ្នាប្រារព្ធពិធីសំដែងរបាំរបស់ភូមិថ្មី នេះមុនគេបង្អស់ ។ អ្នកស្រុកអ្នកភូមិ មានស្រី មានប្រុស នាំគ្នារាំជាគូ តាមប្រពៃណីពីដូនតា តៗ គ្នារហូតដល់បច្ចុប្បន្ននេះ ដែលមានជំនឿថា នឹងនាំឲ្យគេគ្រប់គ្នាមានសេចក្តីសុខចម្រើន ។
-                        <br><br>
-                        បើតាមឯកសារខ្លះដែលនៅសល់ នឹងតាមព័ត៌មាន ដែលយើងទទួលបានពីចាស់ទុំជាច្រើនបានបញ្ជាក់ថា នៅប្រទេសកម្ពុជារបាំប្រជាប្រិយ រាំវង់ រាំក្បាច់
-                    </p>
-                </div>
-                <div class="col-sm-6 colRole" style="border-left: 2px solid #898888">
-                    <p style="font-size: 13px;" class="e">
-                        នេះបានរីកចម្រើនយ៉ាងខ្លាំងនៅក្នុងសតវត្សទី 20 នេះ ។ ពិសេសគឺតាំងពីពេលដែលចលនាខ្មែរឥស្សរៈដែលកើតមាននៅគ្រប់តំបន់ក្នុងប្រទេស និងនៅក្នុងជីវពលនារីក្លាហាន ក្រោកឡើងដើម្បីបណ្ដេញអាណានិគមបារាំង ដើម្បីទាមទារឯករាជ្យជូនជាតិមាតុភូមិនៅមក ហើយដែលគេអាចឃើញសេសសល់នូវបទចម្រៀងរាំវង់មួយចំនួនដែលអាចជាផុសតាង ឬ ជាអនុស្សាវរីយ៍ នៃសម័យកាលនោះឯង ។ ហើយក៏ប្រហែលនៅក្នុងពេលដែលឥទ្ធិពលនៃពាក្យបរទេស ដូចជាពាក្យថា រាំទ្បាំថូន ឬ ឡក ឡាំថូន ថនគឺស្គរ ត្រូវខ្មែរយកមកប្រើ ព្រោះពេលនោះកងទ័ពខ្មែរឥស្សរៈ ដែលបោះទីតាំងក្នុងព្រៃជ្រៅៗ តំបន់ភ្នំដងរែក តំបន់ជ្រាវឱរ៉ាល់ ភ្នំក្រវាញ តំបន់ភាគឦសាននៃប្រទេស ដែលអាចចងសម្ព័ន្ធជាមួយឥស្សរឡាវ ឬតំបន់មាត់សមុទ្រដី ច្រើននាំគ្នាលេងរាំវង់ដោយប្រើតែស្គរដៃមួយប៉ុណ្ណោះ នឹងរៀបចំរាងដែលមានលក្ខណៈងាយស្រួលក្នុងការកំសាន្តតាមកាលៈទេសៈនៃការតស៊ូ និងការរស់នៅដោយយកព្រៃស្រូវជាមូលដ្ឋានបង្អែក ។ សូមបញ្ជាក់ថា ស្គរដៃនេះជាស្គរដៃនៃវង់ភ្លេងអារក្ស ឬវង់ភ្លេងប្រពៃណីភ្លេងការ របស់ជនជាតិខ្មែរដែលមានកំណើតរាប់ពាន់ឆ្នាំមកហើយ ។
-                        <br><br>
-                        គឺតាំងពីពេលស្រុកខ្មែរបានឯករាជ្យ ក្រោមព្រះរាជកិច្ចដឹកនាំ នៃព្រះករុណាព្រះបាទនរោត្តមសីហនុវរ្ម័នថ្ងៃទី 6 វិច្ឆិកាឆ្នាំ 1953 មក ប្រទេសជាតិនិងប្រជារាស្ត្រមានសេរីភាពគ្រប់គ្រាន់ ។ របាំប្រជាប្រិយ រាំវង់ រាំក្បាច់ ក៏បានរីកចម្រើនយ៉ាងខ្លាំងក្លា នោះគឺនៅទីកន្លែងណាខ្លះ គេរាំជាមួយស្គរដៃពេលខ្លះគេរាំជាមួយវង់ភ្លេងខ្មែរ ដែលមានឧបករណ៍ ស្គរ ទ្រ រនាត និងឧបករណ៍ជាច្រើនផ្សេងទៀតរហូតដល់វង់សម័យតន្ត្រីសម័យយ៉ាងទំនើប ដែលយើងឃើញរហូតមកដល់សព្វថ្ងៃនេះផង ។
-                    </p>
-                </div>
             </div>
         </div>
-        <div class="row" style="margin-top: 50px; margin-right: 0;">
-            <div class="col-sm-12">
-                <h5 class="type"> <b>CONTACT US</b></h5>
+        <div class="tab-pane fade" id="pills-pra" role="tabpanel" aria-labelledby="pills-pra-tab">
+            <div class="container" style="margin-bottom: 60px;"> 
+                <h5 class="colHeader" style="margin-top: 60px;"> <b>ប្រភេទរបាំ្រជាប្រិយខ្មែរ</b></h5>
                 <hr class="hr2">
-                <div style="width: 100%; text-align: center; margin-top: 30px;">
-                    <a href="#"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
-                    <a href="#"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
-                    <a href="#"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
+                <div class="container cardType">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 cardPadding card2">
+                            <div class="card card1 text-center">
+                                <iframe class="card-img-top vdoTop" src="https://www.youtube.com/embed/6Ao8svPXSMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <h6 class="cardText">ចង្វាក់រាំវង់</h6>
+                                    <hr class="hr2">
+                                    <p class="typeDes">ចង្វាក់រាំវង់ មានដើមកំណើតក្រោយការករកើត អំបូរខ្មែរ-មន ជាសិល្បះមួយប្រភេទដែលប្រជាជនពីបុរាណកាលមក តែងតែប្រារព្ធឡើង ដើម្បីរាំលេងកំសាន្ដ បំបាត់ទុក្ខកង្វល់ ។</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 cardPadding card2">
+                            <div class="card text-center">
+                                <iframe class="card-img-top vdoTop" src="https://www.youtube.com/embed/mjH0VoZrsIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                        <h6 class="cardText">ចង្វាក់រាំក្បាច់</h6>
+                                        <hr class="hr2">
+                                        <p class="typeDes">របាំរាំក្បាច់វិញ ក៏មានលំនាំប្រហាក់ប្រហែលគ្នានឹងក្បាច់រាំវង់ដែរ គឺដៃត្រូវ «ជីប» ពីក្រោមហើយវាសលើកឡើងខ្ពស់រួច «លា» នៅខាងលើ ខាងឆ្វេងម្ដង ខាងស្ដាំម្ដងប្ដូរវេណគ្នា ។ </p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 cardPadding card2">
+                            <div class="card text-center">
+                                <iframe class="card-img-top vdoTop" src="https://www.youtube.com/embed/RlcQ3PxCL9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                        <h6 class="cardText">ចង្វាក់ឡាំលាវ</h6>
+                                        <hr class="hr2">
+                                        <p class="typeDes">បាំឡាំលាវ ដែលមានចង្វាក់ញាប់រន្ថើន និងរបាំសារ៉ាវ៉ាន់នេះ ជាឥទ្ធិពលរបស់សិល្បៈលាវ ដែលបានហូរចូលមកប្រទេសកម្ពុជាក្នុងឋានៈជាមិត្តភ័ក្តិ និងជា​បង​ប្អូន និងជាអ្នកភូមិផងរបងជាមួយ ហើយត្រូវបានជនជាតិខ្មែរនិយមរាប់អានយ៉ាងក្រៃលែង ។</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 cardPadding card2">
+                            <div class="card text-center">
+                                <iframe class="card-img-top vdoTop" src="https://www.youtube.com/embed/FviRPc7M8FA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                        <h6 class="cardText">ចង្វាក់សារ៉ាវ៉ាន់</h6>
+                                        <hr class="hr2">
+                                        <p class="typeDes">សារ៉ាវ៉ាន់​ គឺជាឈ្មោះខេត្តមួយរបស់ប្រទេសលាវជាប់គ្នា​និងខេត្តអាត់តៈ​ពើ ហើយស្ថិតនៅ​មិនឆ្ងាយប៉ុន្មានពីខេត្តស្ទឹងត្រែងនៃប្រទេសខ្មែរ ។ គេរាំលេងកម្សាន្តក្នុងពិធីអាពាហ៍ពិពាហ៍មង្គលការកូនប្រុសស្រី ពិធីជប់លៀង ពិធី​បុណ្យតាមគ្រួសារ ឬរាំកែកម្សាន្តពេលជួបជុំញាតិមិត្តជិតឆ្ងាយ ។ </p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 cardPadding card2">
+                            <div class="card text-center">
+                                <iframe class="card-img-top vdoTop" src="https://www.youtube.com/embed/0S12fl-QYPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                        <h6 class="cardText">ចង្វាក់ម៉ាឌីហ្សូន</h6>
+                                        <hr class="hr2">
+                                        <p class="typeDes">ចង្វាក់រាំ ម៉ាឌីហ្សូន ជាចង្វាក់រាំមួយបែប ដែលពេញនិយម នៅក្នុងប្រទេសកម្ពុជា ហើយប្រជាជនខ្មែរចូលចិត្ត រាំ មិនដែលចោលនោះទេ មិនថា ក្នុង ពិធីមង្គលការ ជប់លៀង ការជួបជុំផ្សេងៗ ក្នុងការរាំអបអរ ចូលឆ្នាំថ្មី ជាដើម ។</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 cardPadding card2">
+                            <div class="card text-center">
+                                <iframe class="card-img-top vdoTop" src="https://www.youtube.com/embed/66bJC3FsxYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="card-body">
+                                        <h6 class="cardText">ចង្វាក់កន្រ្ទឹម</h6>
+                                        <hr class="hr2">
+                                        <p class="typeDes">ប្រភេទ​ភ្លេង​បុរាណ​កន្រ្ទឹម ជា​ភ្លេង​ខ្មែរ​ដែល​កើត​ដំបូង​មាន​វ័យ​ចំណាស់ ប៉ុន្តែ​ពុំ​មាន​ការ​សិក្សា​ណា​មួយ​ជាក់លាក់​ថា​កកើត​ភ្លេង​នេះ​តាំង​ពី​ពេល​ណា​នោះ​ទេ។ ប៉ុន្តែ​គេ​គ្រាន់​តែ​ដឹង​ថា ពី​ដើម​ឡើយ​កន្ទ្រឹម​គឺ​ជា​ភ្លេង​ដែល​ផ្ដើម​ចេញ​ពី​ភ្លេង​អារក្ស ។</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="colTextPadding" style="text-align: center;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
-                <p style="font-size: 16px; text-align: center; margin-top: 20px;">Copyright &copy; Team o Nith</p>
+            </div>
+            <div class="row" style="padding-top: 30px; margin-right: 0; background-color: whitesmoke">
+                <div class="col-sm-12">
+                    <h5 class="type"> <b>CONTACT US</b></h5>
+                    <hr class="hr2" >
+                    <div style="width: 100%; text-align: center; margin-top: 30px;">
+                        <a href="#"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
+                        <a href="#"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
+                        <a href="#"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
+                    </div>
+                    <p class="colTextPadding" style="text-align: center;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
+                    <p style="font-size: 16px; text-align: center; margin-top: 20px;">Copyright &copy; Team o Nith</p>
+                </div>
             </div>
         </div>
     </div>
-
-     <!-- Modal -->
-     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-sm" role="document">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <h5 class="mTitle" id="exampleModalLabel"></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
-            <div class="modal-body">
+            <div class="container">
+                <div class="modal-body">
                     <iframe width="100%" height="380" id="vdoBody" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <img style="width: 100%" id="imgBody">
-                <p style="text-align: justify; margin-top: 30px;" id="modalBody1"></p>
-                <br>
-                <p style="text-align: justify" id="modalBody2"></p>
-                <br> 
-                <p style="text-align: justify" id="modalBody3"></p>
-                <br><br>
+                    <img style="width: 100%" id="imgBody">
+                    <p style="text-align: justify; margin-top: 30px;" id="modalBody1"></p>
+                    <br>
+                    <p style="text-align: justify" id="modalBody2"></p>
+                    <br> 
+                    <p style="text-align: justify" id="modalBody3"></p>
+                    <br><br>
+                </div>
             </div>
         </div>
         </div>
-    </div>
+    </div> 
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -265,10 +443,6 @@
             $('.carousel').carousel({
                 interval: 2000
             })
-
-            function load_home() {
-                document.getElementById("abc").innerHTML='<object type="text/html" data="testing.html" ></object>';
-            }
     </script>
 </body>
 </html>
