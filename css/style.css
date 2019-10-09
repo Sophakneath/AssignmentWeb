@@ -4,7 +4,7 @@
 }
 .kh_title{
     font-family: 'Moulpali', cursive;
-    color: brown;
+    color: rgb(236, 100, 100);
     text-align: center;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .swipetabnav{
-    background: brown;
+    background: rgb(247, 158, 158);
     padding: 20px;
 
 }
@@ -114,6 +114,10 @@
     width: 50%;
     /* height: 30%; */
     margin: auto;
+}
+
+a:hover{
+   color:  white;
 }
 
 .gallery {
