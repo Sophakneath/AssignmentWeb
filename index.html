@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/firstPage.css">
-    <link rel="stylesheet" href="css/subPage.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -13,19 +12,6 @@
     <meta charset="utf-8">
     <title>First Pages</title>
     <style>
-       .parallax {
-            /* The image used */
-            background-image: url('./img/c7.jpg');
-            /* Set a specific height */
-            min-height: 500px; 
-
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
         .col-sm-12, .row, .bg2{
             margin: 0;
             padding: 0;
@@ -68,12 +54,16 @@
             margin-bottom: 50px;
         }
        
-        .shortDes{
+        .shortDes, .typeDes{
             text-align: justify;
             color: #898888;
-            font-size: 13px;
+            font-size: 16px;
             font-family: 'Fasthand', serif;
-            line-height: 30px;
+            line-height: 40px;
+        }
+
+        .typeDes{
+            font-size: 13px;
         }
 
         .circle{
@@ -88,11 +78,11 @@
             line-height: 50px; 
             color:white;
             font-family: 'Moulpali', cursive;
-            font-size: 20px;
+            font-size: 23px;
         }
 
         .subTitle{
-            font-size: 20px;
+            font-size: 23px;
             color:rgb(236, 100, 100);
             font-family: 'Moulpali', cursive;
         }
@@ -127,7 +117,7 @@
                             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                 <div class="navbar-nav" style="margin-left: 300px;">
                                     <a class="nav-item nav-link active" href="firstPage.html"> <b> <i class="fa fa-home"></i> HOME </b></a>
-                                    <a class="nav-item nav-link active" href="testing.html"><b>ABOUT </b></a>
+                                    <a class="nav-item nav-link active" href="about.html"><b>ABOUT </b></a>
                                     <a class="nav-item nav-link active" href="#"><b>CONTACT US </b></a>
                                 </div>
                             </div>
@@ -193,7 +183,7 @@
                                 </div>
                             </div>
         
-                            <p class="shortDes">របាំខ្មែរគឺជាសិល្បៈនៃការរាំដែលបង្ហាញពីអត្តសញ្ជាណជាតិខ្មែរទាំងអស់ដែលមានច្រើនបែបសណ្ឋានទៅតាមតំបន់នៅក្នុងប្រទេសកម្ពុជា របាំខ្មែរ​មានទាំងអស់ចំនួន ៨២ របាំ និងរបាំខ្សែររឿងមានចំនួន ៣៥ របាំ ។ របាំដែលរស់ឡើងវិញមានចំនួន ៥៤ របាំ និង​ បាត់បង់ចំនួន ២៨ របាំ របាំខ្សែររឿងដែលរស់ឡើងវិញមានចំនួន ២១ របាំ និង របាំខ្សែររឿងដែលបាត់បង់មានចំនួន ១៤ របាំ ។ ហើយរបាំដែលអស្ចារ្យរបស់ខ្មែរគឺ៖ របាំព្រះរាជទ្រព្យ របាំដែលត្រូវបានគេចុះក្នុង​បញ្ជី​សម្បត្តិបេតិកភណ្ឌ (អរូបិយ) របស់​ពិភពលោក នៅថ្ងៃ​ទី៧ ខែ​វិច្ឆិកា ឆ្នាំ​២០០៣ ។</p>
+                            <p class="shortDes">របាំខ្មែរគឺជាសិល្បៈនៃការរាំដែលបង្ហាញពីអត្តសញ្ជាណជាតិខ្មែរទាំងអស់ដែលមានច្រើនបែបសណ្ឋានទៅតាមតំបន់នៅក្នុងប្រទេសកម្ពុជា របាំខ្មែរ​មានទាំងអស់ចំនួន ៨២ របាំ និងរបាំខ្សែររឿងមានចំនួន ៣៥ របាំ ។ ហើយរបាំដែលអស្ចារ្យរបស់ខ្មែរគឺ៖ របាំព្រះរាជទ្រព្យ របាំដែលត្រូវបានគេចុះក្នុង​បញ្ជី​សម្បត្តិបេតិកភណ្ឌ (អរូបិយ) របស់​ពិភពលោក នៅថ្ងៃ​ទី៧ ខែ​វិច្ឆិកា ឆ្នាំ​២០០៣ ។</p>
                         </div>
                     </div>
                 </div>
@@ -217,7 +207,7 @@
                                     <h5 class="subTitle">ឧបករណ៍តន្រ្តីខ្មែរ</h5>
                                 </div>
                             </div>
-                            <p class="shortDes">ឧបករណ៍តន្រ្តីខ្មែរចែកចេញជាបួន ភេទដែលគេប្រើខ្សែសំរាប់ដេញ កេះ កូត និងឧបករណ៏សំរាប់ផ្លុំ ឧបករណ៏សំរាប់វាយបង្កើតស្នូរ។ដែលឧបករណ៏ទាំងនោះមានដូ​ចជា ស្គរ(ស្ករដី ស្គរសម្ភោរ ស្គរធំ ស្គរតូច ស្គរជ័យ) ឈឹង រនាត(រនាតឯក រនាតធុង) ទ្រ ទ្រសោ ទ្រអ៊ូ តាខេ ទ្រឆេ ខ្លុយ ឃឹម ឆាប គង គែន ណៃ មួង ស្រឡៃ ចាប៉ី គងវង្សតូច គងវង្សធំ ឃ្មោះ ប៉ាន់ កុងប៉ឹង ប៉ីអ ។ល។ ឧបករណ៏ប៉ុន្មានប្រភេទទាំងនេះហើយដែលធ្វើអោយ អន្តរជាតិស្គាល់ខ្មែរតាមរយឧបករណ៏ភ្លេងខ្មែរ ។</p>
+                            <p class="shortDes">ឧបករណ៍តន្រ្តីខ្មែរចែកចេញជាបួន ភេទដែលគេប្រើខ្សែសំរាប់ដេញ កេះ កូត និងឧបករណ៏សំរាប់ផ្លុំ ឧបករណ៏សំរាប់វាយបង្កើតស្នូរ។ដែលឧបករណ៏ទាំងនោះមានដូ​ចជា ស្គរ(ស្ករដី ស្គរសម្ភោរ ស្គរធំ ស្គរតូច ស្គរជ័យ) ឈឹង រនាត(រនាតឯក រនាតធុង) ទ្រ ទ្រសោ ទ្រអ៊ូ តាខេ ទ្រឆេ ខ្លុយ ឃឹម ឆាប គង គែន ណៃ មួង ស្រឡៃ ចាប៉ី គងវង្សតូច គងវង្សធំ ឃ្មោះ ប៉ាន់ កុងប៉ឹង ប៉ីអ ។ល។ </p>
                         </div>
                     </div>
                 </div>
@@ -243,7 +233,7 @@
                                 </div>
                             </div>
                             
-                            <p class="shortDes">ភ្លេងខ្មែរបុរាណយើងមានលក្ខណៈសំខាន់ ដោយយើងមិនប្រើរបៀបបស្ចឹមប្រទេស យើងគ្មានកន្លះសម្លេង ហើយ សម្លេងភ្លេងយើងមិនដូចគ្នាពីវង់ភ្លេងមួយទៅវង់ ភ្លេងមួយទៀត ពីភូមិមួយទៅភូមិមួយ ឬ ពីខែត្តមួយទៅខែត្តមួយទៀត បានសេចក្ដីថាភ្លេងបុរាណយើង គ្មានលក្ខណៈតុក្កតា ធ្វើឱ្យដូចគ្នាទាំងអស់ ចម្លងតៗគ្នា ផ្លែកគ្នាមិនបាន ត្រង់នេះជាលក្ខណៈមួយ ដែលថែរក្សាទំនៀមទម្លាប់បុរាណបានគង់វង់មានប្រយោជន៍ដល់អនាគតដែលចង់ដឹងចង់យល់នៃការវិវត្តន៍របស់មនុស្ស។</p>
+                            <p class="shortDes">ភ្លេងខ្មែរបុរាណយើងមានលក្ខណៈសំខាន់ ដោយយើងមិនប្រើរបៀបបស្ចឹមប្រទេស យើងគ្មានកន្លះសម្លេង ហើយ សម្លេងភ្លេងយើងមិនដូចគ្នាពីវង់ភ្លេងមួយទៅវង់ ភ្លេងមួយទៀត ពីភូមិមួយទៅភូមិមួយ ឬពីខែត្តមួយទៅខែត្តមួយទៀត បានសេចក្ដីថាភ្លេងបុរាណយើង មិនចម្លងតៗគ្នា ត្រង់នេះជាលក្ខណៈមួយ ដែលថែរក្សាទំនៀមទម្លាប់បុរាណបានគង់វង់មានប្រយោជន៍ដល់អនាគត ។ </p>
                         </div>
                     </div>
                 </div>
@@ -254,35 +244,27 @@
             <div class="owl-carousel owl-theme slideDrink">
                 <div class="item">
                     <img src="img/s1.jpg" class="sizeRole">
-                    <h6 class="marginSubtext">តួអង្គស្វា</h6>
                 </div>
                 <div class="item">
                     <img src="img/s4.jpg" class="sizeRole">
-                    <h6 class="marginSubtext">តួនាង</h6>
                 </div>
                 <div class="item">
                     <img src="img/s8.jpg" class="sizeRole">
-                    <h6 class="marginSubtext">តួអង្គយក្ស</h6>
                 </div>
                 <div class="item">
                     <img src="img/s6.jpg" class="sizeRole">
-                    <h6 class="marginSubtext">តួអង្គយក្ស</h6>
                 </div>
                 <div class="item">
                     <img src="img/s3.jpg" class="sizeRole">
-                    <h6 class="marginSubtext">តួនាយរង</h6>
                 </div>
                 <div class="item">
                     <img src="img/s2.jpg" class="sizeRole">
-                    <h6 class="marginSubtext">តួអង្គស្វា</h6>
                 </div>
                 <div class="item">
                     <img src="img/s5.jpg" class="sizeRole">
-                    <h6 class="marginSubtext">តួនាង</h6>
                 </div>
                 <div class="item">
                     <img src="img/s8.jpg" class="sizeRole">
-                    <h6 class="marginSubtext">តួនាយរង</h6>
                 </div>
             </div>
         </div>
@@ -297,7 +279,7 @@
                             <div class="card-body">
                                 <h6 class="cardText">សិល្បៈរបាំខ្មែរ</h6>
                                 <hr class="hr2">
-                                <p class="typeDes" style="text-align: justify;">របាំខ្មែរមានបីប្រភេទធំ ក្នុងនោះគឺ របាំក្បាច់បុរាណខ្មែរ របាំប្រពៃណីខ្មែរ និងរបាំប្រជាប្រិយខ្មែរ ។ </p>
+                                <p class="typeDes" style="text-align: justify;">របាំខ្មែរមានបី ប្រភេទធំ ក្នុងនោះគឺ របាំក្បាច់បុរាណខ្មែរ របាំប្រពៃណីខ្មែរ និងរបាំប្រជាប្រិយខ្មែរ ។ </p>
                             </div>
                         </div>
                     </div>
@@ -307,7 +289,7 @@
                             <div class="card-body">
                                 <h6 class="cardText">ឧបករណ៍តន្រ្តីខ្មែរ</h6>
                                 <hr class="hr2">
-                                <p class="typeDes" style="text-align: justify;">ឧបករណ៍តន្រ្តីខ្មែរមានបួន ប្រភេទដែលគេប្រើខ្សែសំរាប់ដេញ កេះ កូត និងឧបករណ៏សំរាប់ផ្លុំ ឧបករណ៏សំរាប់វាយបង្កើតស្នូរ ។ </p>
+                                <p class="typeDes" style="text-align: justify;">ឧបករណ៍តន្រ្តីខ្មែរមានបួនប្រភេទដែល គេប្រើខ្សែសំរាប់ដេញ កេះ កូត និងឧបករណ៏សំរាប់ផ្លុំ ឧបករណ៏សំរាប់វាយបង្កើតស្នូរ ។ </p>
                             </div>
                         </div>
                     </div>

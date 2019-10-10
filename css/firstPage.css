@@ -24,13 +24,14 @@
     text-align: center;
     color: #898888;
     margin-top: 20px;
+    font-size: 23px;
 }
 .abc{
     margin-top: 30px; 
     padding-left: 30px; 
     padding-right: 30px; 
     padding-bottom: 20px; 
-    font-size: 13px; 
+    font-size: 16px; 
     text-align: justify; 
     color: #898888;
 }
@@ -184,18 +185,18 @@
     text-align: center;
     color: #898888;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 23px;
     font-family: 'Moulpali', cursive;
 }
 .colHeader1{
     width: 100%;
     color: #898888;
     margin-left: 30px;
-    font-size: 20px;
+    font-size: 23px;
     font-family: 'Moulpali', cursive;
 }
 .colTextPadding{
-    font-size: 13px;
+    font-size: 16px;
     padding-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
@@ -206,7 +207,7 @@
     width: 30px;  
 }
 .colTextSP{
-    font-size: 13px;
+    font-size: 16px;
     color: #898888;
     text-align: justify;
     padding-left: 30px; 
@@ -223,7 +224,7 @@
     margin-left: 25px;
     margin-right: 25px;
     font-family: 'Moulpali', cursive;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .col-sm-12>a{
