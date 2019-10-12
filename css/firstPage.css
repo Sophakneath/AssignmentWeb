@@ -89,9 +89,6 @@
     font-size: 13px;
 }
 
-.cardType{
-    margin-top: 30px;
-}
 .center{
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -279,10 +276,9 @@
 
 .header{
     color: rgb(236, 100, 100);
-    text-align: left;
     font-family: 'Moulpali', cursive;
     font-size: 60px;
-    margin-left: 180px;
+    margin-left: 160px;
 }
 .header1{
     color: rgb(255, 255, 255);
@@ -339,10 +335,9 @@ h6{
 
 .logo{
     left: 0;
-    padding-left: 60px;
+    padding-left: 20px;
     color: white;
     padding-top: 20px;
-    
 }
 
 .menu{
@@ -351,16 +346,28 @@ h6{
 
 
 .title{
-    color: white;
+    /* color: white;
     width: 100%;
-    text-align: center;
+    text-align: center; 
     margin-top: 30px;
     margin-bottom: 30px;
-}
-.title{
     position: absolute;
-    width: 60%;
+    width: 50%;
     z-index: 1;
+    transform: translate(-50%, -50%);
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;  */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 25%; 
+    transform: translate(-50%, -50%);
+    color: white;
+    height: auto;
+    margin-top: auto;
+    z-index: 1;
+    margin-bottom: auto;
 }
 .type{
     color: #898888;
@@ -376,7 +383,6 @@ h6{
 }
 
 .row1{
-    position: absolute;
     z-index: 1;
     width: 100%;
     padding-bottom: 5px;
@@ -385,6 +391,7 @@ h6{
     margin: 0;
     padding-right: 0;
 }
+
 .row2{
     position: absolute;
     margin: auto;
