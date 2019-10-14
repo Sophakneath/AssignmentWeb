@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/firstPage.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,70 +16,35 @@
         @import url('https://fonts.googleapis.com/css?family=Moul|Moulpali&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Fasthand&display=swap');
         .bg>div>div>a>b{
-        color: white;
-        font-size: 16px;
-        margin-right: 30px;
+            color: white;
+            font-size: 16px;
+            margin-right: 30px;
         }
         .bg>div>div>a:hover{
-        font-size: 19px;
+            font-size: 19px;
         }
-        .row1{
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        padding-bottom: 5px;
-        padding-top: 5px;
-        background-color: rgba(0, 0, 0, 0.2);
-        margin: 0;
-        padding-right: 0;
-        }
-        .hr2{
-        width: 80px;
-        background: #898888;
-        height: 3px;
-        margin-top: 10px;
-        }
+    
         .type{
-        color: #898888;
-        text-align: center;
-        width: 100%;
+            color: #898888;
+            text-align: center;
+            width: 100%;
         }
-        .colTextPadding {
-        font-size: 13px;
-        padding-top: 20px;
-        padding-left: 50px;
-        padding-right: 50px;
-        color: #898888;
-        font-family: 'Fasthand', serif
-        }
+   
         .col-sm-12>a:hover{
-        background-color:  rgba(255, 255, 255, 0.3);
-        text-decoration: none;
-        color: white;
+            background-color:  rgba(255, 255, 255, 0.3);
+            text-decoration: none;
+            color: white;
         }
         .b{
-        background-color: rgba(0, 0, 0, 0.2);
-        width: 100%;
-        height: 1000px;
-        position: absolute;
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: 1000px;
+            position: absolute;
         }
-        .bg{
-        background-color: transparent;
-        margin: 0;
-        border: none;
-        }
-        .row1{
-        position: fixed;
-        z-index: 1;
-        width: 100%;
-        padding-bottom: 5px;
-        padding-top: 5px;
-        background-color: rgba(0, 0, 0, 0.2);
-        margin: 0;
-        padding-right: 0;
-        }
-        .logo{
-            padding-left: 20px;
+        .typeDes{
+            font-family: 'Fasthand', serif;
+            line-height: 40px;
+            text-align: justify;
         }
     </style>
 </head>
@@ -131,23 +97,77 @@
     <div class="hero-text">
         <h1 class="display-4 kh_title">អំពី​វង់ភ្លេងខ្មែរ</h1>
         <p class="kh_content">បុរសខ្មែរបានបង្កើតទម្រង់តន្ត្រីប្លែកៗយ៉ាងច្រើន សម្រាប់កំដរគ្រប់ពិធីក្នុងជីវិតរស់នៅទុកជាកេរមរតក។...</p>
-        <button type="button" class="btn btn-outline-danger kh_content" data-toggle="modal" data-target="#exampleModalCenter">
+        <button type="button" class="btn btn-danger kh_content" data-toggle="modal" data-target="#exampleModalCenter">
                 អានបន្ត
         </button>
     </div>
 </div>
 
+<div>
+    <h5 class="type" style="margin-top: 50px; font-size: 23px; font-family: 'Moulpali', serif; line-height: 30px;"> <b>អត្ថបទអំពីវង់ភ្លេងខ្មែរ</b></h5>
+    <hr class="hr2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 cardPadding card2">
+                <div class="card card1 text-center" style="width: 23rem; margin-top: 30px;">
+                    <img src="img/kh_music/card-mohory.jpg" class="card-img-top cardImg">
+                    <div class="card-body">
+                        <h6 class="cardText">វង់ភ្លេងមហោរី</h6>
+                        <hr class="hr2">
+                        <p class="typeDes">មហោរី អាចក្លាយមកពីពាក្យ មនោហារ គី មនោហារា(ប្រុស) មនោហារី(ស្រី) ដែលមានន័យថាគួរជាទីពេញចិត្ត ឬដែលមានលម្អគួរស្រឡាញ់មិនភ្លេច ។</p>
+                        <a href="mohory.html" class="btn btn-secondary" style="font-family: 'Moulpali', cursive;">មើលលំអិត</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 cardPadding card2">
+                <div class="card text-center" style="width: 23rem; margin-top: 30px;">
+                    <img src="img/kh_music/card-ken.jpg" class="card-img-top cardImg">
+                    <div class="card-body">
+                            <h6 class="cardText">វង់ភ្លេងគែន</h6>
+                            <hr class="hr2">
+                            <p class="typeDes">តាមឯកសារលោក ពេជ្រ ទុំក្រវ៉ិល ឃើញថា ល្ខោនគែនមានវត្តមានចេញពីក្នុងព្រះបរមរាជវាំង នៅរាជធានីភ្នំពេញ ក្នុងរាជ្យព្រះបាទនរោត្តម សីហនុ(១៨៤១ឥ១៩៥៥)។ </p>
+                            <a href="ken.html" class="btn btn-secondary" style="font-family: 'Moulpali', cursive;">មើលលំអិត</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 cardPadding card2">
+                <div class="card text-center" style="width: 23rem; margin-top: 30px;">
+                    <img src="img/kh_music/card-pinpeat.jpg" class="card-img-top cardImg">
+                    <div class="card-body">
+                            <h6 class="cardText">វង់ភ្លេងពិណពាទ្យ</h6>
+                            <hr class="hr2">
+                            <p class="typeDes">វង់ភ្លេងពិណពាទ្យគឺជាតន្រ្តីមានសំឡេងខ្លាំង ងំ ដែលសំដែងពីភាពអង់អាច ម៉ឺងម៉ាត់ស្វាហាប់ហើយជាវង់តន្ត្រីធំជាងគេ ក្នុងចំណោមវង់ភ្លេងខ្មែរទាំងអស់ ។</p>
+                            <a href="pinpeat.html" class="btn btn-secondary" style="font-family: 'Moulpali', cursive;">មើលលំអិត</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 cardPadding card2">
+                <div class="card text-center" style="width: 23rem; margin-top: 30px;">
+                    <img src="img/kh_music/card-chhayyam.jpg" class="card-img-top cardImg">
+                    <div class="card-body">
+                            <h6 class="cardText">វង់ភ្លេងឆៃយ៉ាំ</h6>
+                            <hr class="hr2">
+                            <p class="typeDes">វង់ភ្លេងឆៃយ៉ាំមានប្រជាប្រិយខ្លាំងក្នុងសង្គមខ្មែរ និងមានឥទ្ធិពលអាចទាក់ទាញមហាជនបាន ។ គេលេងភ្លេងនេះក្នុងពិធីបុណ្យដូចជាបុណ្យកឋិន បុណ្យផ្កា បុណ្យបំបួសនាគជាដើម។</p>
+                            <a href="chhayyam.html" class="btn btn-secondary" style="font-family: 'Moulpali', cursive;">មើលលំអិត</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<div class="center padding">
-    <h1 class="display-4 kh_title" >អត្ថបទអំពីវង់ភ្លេងខ្មែរ</h1>
-</div>    
+<!-- <div class="center padding">
+    <h1 class="display-4 kh_title" style="font-size: 23px;"></h1>
+</div>     -->
 
-<div class="owl-carousel owl-theme">
+<!-- <div class="owl-carousel owl-theme">
     <div class="card center" style="width: 18rem;">
         <img class="card-img-top" src="img/kh_music/card-mohory.jpg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title kh_title">វង់ភ្លេងមហោរី</h5>
-            <!-- <p class="card-text kh_content">មហោរី អាចក្លាយមកពីពាក្យ មនោហារ គី មនោហារា(ប្រុស) មនោហារី(ស្រី) ដែលមានន័យថាគួរជាទីពេញចិត្ត ឬដែលមានលម្អគួរស្រឡាញ់មិនភ្លេច។</p> -->
+            <p class="card-text kh_content"></p>
             <a href="mohory.html" class="btn btn-danger kh_content">អានបន្ត</a>
         </div>
     </div>
@@ -156,7 +176,7 @@
         <img class="card-img-top" src="img/kh_music/card-ken.jpg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title​ kh_title">វង់ភ្លេងគែន</h5>
-            <!-- <p class="card-text kh_content">តាមឯកសារលោក ពេជ្រ ទុំក្រវ៉ិល ឃើញថា ល្ខោនគែនមានវត្តមានចេញពីក្នុងព្រះបរមរាជវាំង នៅរាជធានីភ្នំពេញ ក្នុងរាជ្យព្រះបាទនរោត្តម សីហនុ(១៨៤១ឥ១៩៥៥)។ </p> -->
+            <p class="card-text kh_content"> </p>
             <a href="ken.html" class="btn btn-danger kh_content">អានបន្ត</a>
         </div>
     </div>
@@ -165,7 +185,7 @@
         <img class="card-img-top" src="img/kh_music/card-pinpeat.jpg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title​ kh_title">វង់ភ្លេងពិណពាទ្យ</h5>
-            <!-- <p class="card-text kh_content">វង់ភ្លេងពិណពាទ្យគឺជាតន្រ្តីមានសំឡេងខ្លាំង ងំ ដែលសំដែងពីភាពអង់អាច ម៉ឺងម៉ាត់ស្វាហាប់ហើយជាវង់តន្ត្រីធំជាងគេ ក្នុងចំណោមវង់ភ្លេងខ្មែរទាំងអស់។</p> -->
+            <p class="card-text kh_content"></p>
             <a href="pinpeat.html" class="btn btn-danger kh_content center">អានបន្ត</a>
         </div>
     </div>
@@ -174,22 +194,22 @@
         <img class="card-img-top" src="img/kh_music/card-chhayyam.jpg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title kh_title">វង់ភ្លេងឆៃយ៉ាំ</h5>
-            <!-- <p class="card-text kh_content">វង់ភ្លេងឆៃយ៉ាំមានប្រជាប្រិយខ្លាំងក្នុងសង្គមខ្មែរ និងមានឥទ្ធិពលអាចទាក់ទាញមហាជនបាន។</p> -->
+            <p class="card-text kh_content"></p>
             <a href="chhayyam.html" class="btn btn-danger kh_content">អានបន្ត</a>
         </div>
     </div>
-</div>
+</div> -->
 
-<div class="row" style="margin-top: 50px; margin-right: 0;">
-    <div class="col-sm-12">
+<div class="row" style="margin-top: 60px; padding-top: 30px; margin-right: 0; background-color: whitesmoke">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
         <h5 class="type"> <b>CONTACT US</b></h5>
-        <hr class="hr2">
+        <hr class="hr2" >
         <div style="width: 100%; text-align: center; margin-top: 30px;">
-            <a href="#"><img src="img/facebook.png" style="width:30px;margin-right:10px;"></a>
-            <a href="#"><img src="img/instagram.png" style="width:30px;margin-right:10px;"></a>
-            <a href="#"><img src="img/telephone-symbol-button.png" style="width: 30px;"></a>
+            <a href="#"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
+            <a href="#"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
+            <a href="#"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
         </div>
-        <p class="colTextPadding" style="text-align: center;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
+        <p class="colTextPadding" style="text-align: center; line-height: 40px;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
         <p style="font-size: 16px; text-align: center; margin-top: 20px;">Copyright &copy; Team o Nith</p>
     </div>
 </div>

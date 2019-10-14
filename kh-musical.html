@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/firstPage.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,89 +23,79 @@
         .bg>div>div>a:hover{
         font-size: 19px;
         }
-        .row1{
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        padding-bottom: 5px;
-        padding-top: 5px;
-        background-color: rgba(0, 0, 0, 0.2);
-        margin: 0;
-        padding-right: 0;
-        }
-        .hr2{
-        width: 80px;
-        background: #898888;
-        height: 3px;
-        margin-top: 10px;
-        }
+
         .type{
-        color: #898888;
-        text-align: center;
-        width: 100%;
+            color: #898888;
+            text-align: center;
+            width: 100%;
         }
-        .colTextPadding {
-        font-size: 13px;
-        padding-top: 20px;
-        padding-left: 50px;
-        padding-right: 50px;
-        color: #898888;
-        font-family: 'Fasthand', serif
-        }
+
         .col-sm-12>a:hover{
-        background-color:  rgba(255, 255, 255, 0.3);
-        text-decoration: none;
-        color: white;
+            background-color:  rgba(255, 255, 255, 0.3);
+            text-decoration: none;
+            color: white;
         }
+
         .b{
-        background-color: rgba(0, 0, 0, 0.2);
-        width: 100%;
-        height: 1000px;
-        position: absolute;
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: 1000px;
+            position: absolute;
         }
-        .bg{
-        background-color: transparent;
-        margin: 0;
-        border: none;
+
+        .modal-body{
+            padding-left: 30px; padding-right: 30px;
         }
-        .row1{
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        padding-bottom: 5px;
-        padding-top: 5px;
-        background-color: rgba(0, 0, 0, 0.2);
-        margin: 0;
-        padding-right: 0;
+        .mTitle, .modal-header{
+            font-family: 'Moulpali', cursive;
+            text-align: center;
+            width: 100%;
+        }
+
+        .modal-body>p{
+            font-family: 'Fasthand', serif;
+            line-height: 40px;
+            font-size: 16px;
+        }
+
+        .typeDes{
+            font-family: 'Fasthand', serif;
+            line-height: 40px;
+            text-align: justify;
         }
     </style>
 </head>
 <body>
+
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title kh_title center" id="exampleModalLongTitle">អំពី​វង់ភ្លេងខ្មែរ</h5>
-                
-            </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-sm" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="mTitle" id="exampleModalLabel" style="color: rgb(230, 100, 100); margin-top: 10px;">អំពី​វង់ភ្លេងខ្មែរ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="container">
             <div class="modal-body">
-                <p class="kh_content" style="color:black; text-align: justify;">
-                    ភ្លេងបុរាណខ្មែរបានរក្សាទុក្ខនៅនិរន្តរភាពរបស់ខ្លូនអាចអោយគេចងចាំតាមរយៈឧបករណ៏ ៤ ប្រភេទដែលគេប្រើខ្សែសំរាប់ដេញ កេះ កូត និងឧបករណ៏សំរាប់ផ្លុំ ឧបករណ៏សំរាប់វាយបង្កើតស្នូរ។ដែលឧបករណ៏ទាំងនោះមានដូ​ចជា ស្គរ(ស្ករដី ស្គរសម្ភោរ ស្គរធំ ស្គរតូច ស្គរជ័យ) ឈឹង រនាត(រនាតឯក រនាតធុង) ទ្រ ទ្រសោ ទ្រអ៊ូ តាខេ ទ្រឆេ ខ្លុយ ឃឹម ឆាប គង គែន ណៃ មួង ស្រឡៃ ចាប៉ី គងវង្សតូច គងវង្សធំ ឃ្មោះ ប៉ាន់ កុងប៉ឹង ប៉ីអ។ល។ ឧបករណ៏ប៉ុន្មានប្រភេទទាំងនេះហើយដែលធ្វើអោយ អន្តរជាតិស្គាល់ខ្មែរតាមរយឧបករណ៏ភ្លេងខ្មែរ ជាមួយនិងឧបករណ៏ដដែលនេះត្រូវបានយកមកបង្ហាញពីប្រពៃណីរបស់ ខ្លួនដែលប្រើក្នុងពិធីបែបសាសនាដូចជាពិធីបុណ្យកឋិនទាន បុណ្យផ្កា បុណ្យចូលឆ្នាំថ្មី បុណ្យកាន់បិណ្យ ភ្ជំបិណ្យ និងការសំដែងសិល្បៈសម័យ​ជាដើម។
+                <img style="width: 100%" src="img/musical_instruments/cover2.jpg">
+                <p style="text-align: justify; margin-top: 30px;">
+                    ភ្លេងបុរាណខ្មែរបានរក្សាទុក្ខនៅនិរន្តរភាពរបស់ខ្លូនអាចអោយគេចងចាំតាមរយៈឧបករណ៏ ៤ ប្រភេទដែលគេប្រើខ្សែសំរាប់ដេញ កេះ កូត និងឧបករណ៏សំរាប់ផ្លុំ ឧបករណ៏សំរាប់វាយបង្កើតស្នូរ។ដែលឧបករណ៏ទាំងនោះមានដូ​ចជា ស្គរ(ស្ករដី ស្គរសម្ភោរ ស្គរធំ ស្គរតូច ស្គរជ័យ) ឈឹង រនាត(រនាតឯក រនាតធុង) ទ្រ ទ្រសោ ទ្រអ៊ូ តាខេ ទ្រឆេ ខ្លុយ ឃឹម ឆាប គង គែន ណៃ មួង ស្រឡៃ ចាប៉ី គងវង្សតូច គងវង្សធំ ឃ្មោះ ប៉ាន់ កុងប៉ឹង ប៉ីអ។ល។ 
+                    <br><br>
+                    ឧបករណ៏ប៉ុន្មានប្រភេទទាំងនេះហើយដែលធ្វើអោយ អន្តរជាតិស្គាល់ខ្មែរតាមរយឧបករណ៏ភ្លេងខ្មែរ ជាមួយនិងឧបករណ៏ដដែលនេះត្រូវបានយកមកបង្ហាញពីប្រពៃណីរបស់ ខ្លួនដែលប្រើក្នុងពិធីបែបសាសនាដូចជាពិធីបុណ្យកឋិនទាន បុណ្យផ្កា បុណ្យចូលឆ្នាំថ្មី បុណ្យកាន់បិណ្យ ភ្ជំបិណ្យ និងការសំដែងសិល្បៈសម័យ​ជាដើម។
                 </p>
-            </div>
-            <div class="modal-footer center">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
-</div>
+    </div>
+</div>   
 
-<div class=" hero-image">
+<div class=" hero-image" style="background-image: url('img/musical_instruments/cover1.png')";>
     <div class="row row1 fix">
         <div class="col-sm-12 menu">
             <nav class="navbar navbar-expand-lg navbar-dark bg">
-                <h5 class="bg logo navbar-brand"><b>LOGO</b></h5>
+                <h5 class="bg navbar-brand"><b>LOGO</b></h5>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -119,67 +110,79 @@
         </div>
     </div>
     <div class="hero-text">
-        <h1 class="display-4 kh_title" >អំពីឧបករណ៏ភ្លេងខ្មែរ</h1>
-        <p class="kh_content">ភ្លេងបុរាណខ្មែរបានរក្សាទុក្ខនៅនិរន្តរភាពរបស់ខ្លូនអាចអោយគេចងចាំតាមរយៈឧបករណ៏ ៤ ប្រភេទ...</p>
-        <button type="button" class="btn btn-outline-danger kh_content" data-toggle="modal" data-target="#exampleModalCenter">
+        <h1 class="display-4 kh_title" style="color: rgb(230, 100, 100);">អំពីឧបករណ៏ភ្លេងខ្មែរ</h1>
+        <p class="kh_content" style="text-align: center;">ភ្លេងបុរាណខ្មែរបានរក្សាទុក្ខនៅនិរន្តរភាពរបស់ខ្លូនអាចអោយគេចងចាំតាមរយៈឧបករណ៏ ៤ ប្រភេទ...</p>
+        <button type="button" class="btn btn-danger kh_content" data-toggle="modal" data-target="#exampleModal">
                 អានបន្ត
         </button>
     </div>
 </div>
 
-
-<div class="center padding">
-    <h1 class="display-4 kh_title" >អត្ថបទឧបករណ៏ភ្លេងខ្មែរ</h1>
-</div>    
-
-<div class="owl-carousel owl-theme">
-    <div class="card center" style="width: 18rem;">
-        <img class="card-img-top" src="img/musical_instruments/long4.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title kh_title">ចាប៉ីដងវែង</h5>
-            <!-- <p class="card-text kh_content">មហោរី អាចក្លាយមកពីពាក្យ មនោហារ គី មនោហារា(ប្រុស) មនោហារី(ស្រី) ដែលមានន័យថាគួរជាទីពេញចិត្ត ឬដែលមានលម្អគួរស្រឡាញ់មិនភ្លេច។</p> -->
-            <a href="chapey dorng veng.html" class="btn btn-danger kh_content">អានបន្ត</a>
+<div>
+    <h5 class="type" style="margin-top: 50px; font-size: 23px; font-family: 'Moulpali', serif; line-height: 30px;"> <b>ឧបករណ៏ភ្លេងខ្មែរ</b></h5>
+    <hr class="hr2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 cardPadding card2">
+                <div class="card card1 text-center" style="width: 23rem; margin-top: 30px;">
+                    <img src="img/musical_instruments/long4.jpg" class="card-img-top cardImg">
+                    <div class="card-body">
+                        <h6 class="cardText">ចាប៉ីដងវែង</h6>
+                        <hr class="hr2">
+                        <p class="typeDes">ចាប៉ីដងវែងជាឧបករណ៍មានខ្សែ២ ឬ៤ ប៉ុន្តែវាមានសំនៀងតែ២ទេ ។ វាសម្រាប់ប្រគំក្នុងវង់ភ្លេងការបុរាណ វង់ភ្លេងអារក្ស វង់ភ្លេងមហោរីជាដើម និងប្រើទោលសម្រាប់លេងកំដរចម្រៀងកំណាព្យ ។</p>
+                        <a href="chapeydorngveng.html" class="btn btn-secondary" style="font-family: 'Moulpali', cursive;">មើលលំអិត</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 cardPadding card2">
+                <div class="card text-center" style="width: 23rem; margin-top: 30px;">
+                    <img src="img/musical_instruments/kong5.jpg" class="card-img-top cardImg">
+                    <div class="card-body">
+                            <h6 class="cardText">គង</h6>
+                            <hr class="hr2">
+                            <p class="typeDes">ឧប​ករណ៍​គង​វង់ ​មាន​ពីរប្រភេទ គឺ​គង​វង់​តូច និង​គង​វង់​ធំ ។ ហើយគង​វង់​ទាំង​ពីរ​នេះ​ ត្រូវបានគេប្រើ​ប្រាស់​នៅ​ក្នុង​វង់​ភ្លេង​ពិណ​ពាទ្យ​បច្ចុប្បន្ននេះ ។ </p>
+                            <a href="kong.html" class="btn btn-secondary" style="font-family: 'Moulpali', cursive;">មើលលំអិត</a>
+                        </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="card center" style="width: 18rem;">
-        <img class="card-img-top" src="img/musical_instruments/wc-drum3.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title​ kh_title"> ស្គរឆៃយ៉ាំ</h5>
-            <!-- <p class="card-text kh_content">តាមឯកសារលោក ពេជ្រ ទុំក្រវ៉ិល ឃើញថា ល្ខោនគែនមានវត្តមានចេញពីក្នុងព្រះបរមរាជវាំង នៅរាជធានីភ្នំពេញ ក្នុងរាជ្យព្រះបាទនរោត្តម សីហនុ(១៨៤១ឥ១៩៥៥)។ </p> -->
-            <a href="chhayyam drum.html" class="btn btn-danger kh_content">អានបន្ត</a>
-        </div>
-    </div>
-
-    <div class="card center" style="width: 18rem;">
-        <img class="card-img-top" src="img/musical_instruments/wc-flute1.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title​ kh_title">ខ្លុយ</h5>
-            <!-- <p class="card-text kh_content">វង់ភ្លេងពិណពាទ្យគឺជាតន្រ្តីមានសំឡេងខ្លាំង ងំ ដែលសំដែងពីភាពអង់អាច ម៉ឺងម៉ាត់ស្វាហាប់ហើយជាវង់តន្ត្រីធំជាងគេ ក្នុងចំណោមវង់ភ្លេងខ្មែរទាំងអស់។</p> -->
-            <a href="kluy.html" class="btn btn-danger kh_content center">អានបន្ត</a>
-        </div>
-    </div>
-
-    <div class="card center" style="width: 18rem;">
-        <img class="card-img-top" src="img/musical_instruments/short.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title kh_title">ចាប៉ីដងខ្លី</h5>
-            <!-- <p class="card-text kh_content">វង់ភ្លេងឆៃយ៉ាំមានប្រជាប្រិយខ្លាំងក្នុងសង្គមខ្មែរ និងមានឥទ្ធិពលអាចទាក់ទាញមហាជនបាន។</p> -->
-            <a href="chapey dorng kley.html" class="btn btn-danger kh_content">អានបន្ត</a>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 cardPadding card2">
+                <div class="card text-center" style="width: 23rem; margin-top: 30px;">
+                    <img src="img/musical_instruments/roneat5.jpeg" class="card-img-top cardImg">
+                    <div class="card-body">
+                            <h6 class="cardText">រនាតឯក</h6>
+                            <hr class="hr2">
+                            <p class="typeDes">រនាតឯក គឺជាឧបករណ៍​មួយ ដែលមាន​មុខ​ងារ​សំខាន់​ក្នុង​វង់​ភ្លេង​ពិណ​ពាទ្យ​ផង ក្នុង​វង់​ភ្លេង​មហោ​រី​ផង ។​</p>
+                            <a href="roneat.html" class="btn btn-secondary" style="font-family: 'Moulpali', cursive;">មើលលំអិត</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 cardPadding card2">
+                <div class="card text-center" style="width: 23rem; margin-top: 30px;">
+                    <img src="img/musical_instruments/tro7.jpg" class="card-img-top cardImg">
+                    <div class="card-body">
+                            <h6 class="cardText">ទ្រខ្សែបី</h6>
+                            <hr class="hr2">
+                            <p class="typeDes">ឧបករណ៍ទ្រខ្មែរ គឺជាឧបករណ៍ដែលមានមុខងារសំខាន់បំផុតនៅក្នុងវង់ភ្លេងអារក្ស និងនៅក្នុងវង់ភ្លេងការបុរាណ ។</p>
+                            <a href="tro.html" class="btn btn-secondary" style="font-family: 'Moulpali', cursive;">មើលលំអិត</a>
+                        </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="row" style="margin-top: 50px; margin-right: 0;">
-    <div class="col-sm-12">
+<div class="row" style="margin-top: 60px; padding-top: 30px; margin-right: 0; background-color: whitesmoke">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
         <h5 class="type"> <b>CONTACT US</b></h5>
-        <hr class="hr2">
+        <hr class="hr2" >
         <div style="width: 100%; text-align: center; margin-top: 30px;">
-            <a href="#"><img src="img/facebook.png" style="width:30px;margin-right:10px;"></a>
-            <a href="#"><img src="img/instagram.png" style="width:30px;margin-right:10px;"></a>
-            <a href="#"><img src="img/telephone-symbol-button.png" style="width: 30px;"></a>
+            <a href="#"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
+            <a href="#"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
+            <a href="#"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
         </div>
-        <p class="colTextPadding" style="text-align: center;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
+        <p class="colTextPadding" style="text-align: center; line-height: 40px;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
         <p style="font-size: 16px; text-align: center; margin-top: 20px;">Copyright &copy; Team o Nith</p>
     </div>
 </div>
