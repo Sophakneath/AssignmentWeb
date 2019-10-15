@@ -101,6 +101,7 @@
     </style>
 </head>
 <body>
+    <div id="scroll" >
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -118,7 +119,7 @@
                                 <div class="navbar-nav" style="margin-left: 300px;">
                                     <a class="nav-item nav-link active" href="index.html"> <b> <i class="fa fa-home"></i> HOME </b></a>
                                     <a class="nav-item nav-link active" href="about.html"><b>ABOUT </b></a>
-                                    <a class="nav-item nav-link active" href="#"><b>CONTACT US </b></a>
+                                    <a class="nav-item nav-link active" onclick="scrollToBottom()"><b>CONTACT US </b></a>
                                 </div>
                             </div>
                         </nav>
@@ -307,19 +308,20 @@
             </div>
         </div>
 
-        <div class="row" style="padding-top: 30px; margin-right: 0; background-color: whitesmoke">
+        <div class="row" style="padding-top: 30px; margin-right: 0; background-color: whitesmoke;">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                 <h5 class="type"> <b>CONTACT US</b></h5>
                 <hr class="hr2" >
                 <div style="width: 100%; text-align: center; margin-top: 30px;">
-                    <a href="#"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
-                    <a href="#"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
-                    <a href="#"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
+                    <a href="https://www.facebook.com/SopheakOrArtist/?__tn__=%2Cd-k-R&eid=ARDD_RpSyTwkgamVj3y5juHgPIo7Eobcf25AbV9j41-IsExNycXVlOL8QRuTC0JwlQI_TaHAEgUN0rko" target="_blank"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
+                    <a href="https://www.instagram.com/khmerartistry/" target="_blank"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
+                    <a href="tel:+85510 435 042"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
                 </div>
                 <p class="colTextPadding" style="text-align: center; line-height: 40px;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
                 <p style="font-size: 16px; text-align: center; margin-top: 20px;">Copyright &copy; Team o Nith</p>
             </div>
         </div>
+  
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -346,6 +348,12 @@
             $('.carousel').carousel({
                 interval: 2000
             })
+
+            function scrollToBottom()
+            {
+                var element = document.getElementById("scroll");
+                element.scrollIntoView(false);
+            }
     </script>
 </body>
 </html>

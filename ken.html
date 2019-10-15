@@ -48,207 +48,215 @@
     </style>
 </head>
 <body>
-    <div class="hero-image" style="background-image: url('img/kh_music/ken/ken.jpg')";>
-        <div class=" row1 fix">
-            <div class="col-sm-12 menu">
-                <nav class="navbar navbar-expand-lg navbar-dark bg">
-                    <h5 class="bg logo navbar-brand"><b>LOGO</b></h5>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav" style="margin-left: 300px;">
-                            <a class="nav-item nav-link active" href="index.html"> <b> <i class="fa fa-home"></i> HOME </b></a>
-                            <a class="nav-item nav-link active" href="about.html"><b>ABOUT </b></a>
-                            <a class="nav-item nav-link active" href="#"><b>CONTACT US </b></a>
+    <div id="scroll">
+        <div class="hero-image" style="background-image: url('img/kh_music/ken/ken.jpg')";>
+            <div class=" row1 fix">
+                <div class="col-sm-12 menu">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg">
+                        <h5 class="bg logo navbar-brand"><b>LOGO</b></h5>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav" style="margin-left: 300px;">
+                                <a class="nav-item nav-link active" href="index.html"> <b> <i class="fa fa-home"></i> HOME </b></a>
+                                <a class="nav-item nav-link active" href="about.html"><b>ABOUT </b></a>
+                                <a class="nav-item nav-link active" onclick="scrollToBottom()"><b>CONTACT US </b></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="hero-text text-bg padding">
+                <h1 class="kh_title" style="color: rgb(236, 100, 100);">
+                    វង់ភ្លេងគែន
+                </h1>
+            </div>
+        </div>
+
+        <ul class="swipetabnav nav  nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist" style="overflow-x: auto;">
+            <li class="nav-item">
+                <a class="nav-link active kh_title white" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">ភាពទូទៅ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link kh_title white" id="pills-instruments-tab" data-toggle="pill" href="#pills-instruments" role="tab" aria-controls="pills-instruments" aria-selected="false">ឧបករណ៍តន្រ្តី</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link kh_title white" id="pills-play-tab" data-toggle="pill" href="#pills-play" role="tab" aria-controls="pills-play" aria-selected="false">ការលេង</a>
+            </li>
+        </ul>
+        <div class="parallax" style='background-image: url("img/kh_music/bayon-drawing.jpg")'>
+
+        </div>
+
+        <div class="container"s>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <p class="kh_content padding">
+                        តាមឯកសារលោក ពេជ្រ ទុំក្រវ៉ិល ឃើញថា ល្ខោនគែនមានវត្តមានចេញពីក្នុងព្រះបរមរាជវាំង នៅរាជធានីភ្នំពេញ ក្នុងរាជ្យព្រះបាទនរោត្តម សីហនុ(១៨៤១ឥ១៩៥៥)។
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="pills-instruments" role="tabpanel" aria-labelledby="pills-instruments-tab">
+                    <p class="kh_content padding">
+                        គេយកឧបករណ៍គែនមកប្រសិទ្ធិនាមអោយវង់តន្ត្រីនេះ ព្រោះគែនជាគោលសំខាន់ក្នុងការផ្លុំបន្លឺសាច់បទ។ វងតន្រ្តីគែនសម្រាប់កំដរវង់ល្ខោន គែនដែលប្រើគែនចំនួនបី បួន ប្រាំ ឬប្រាំមួយមានសូរពីទាបទៅខ្ពស់។ 
+                        ម្យ៉ាងទៀត អ្នកសម្ដែងល្ខោននេះច្រើនផ្លុំគែនដោយខ្លួនឯង និងរាំដោយខ្លួនឯងផង។ តែក៏មានអ្នកផ្លុំគែនផ្សេងទៀត និងអ្នកចម្រៀងពីរនាក់ប្រុសម្នាក់ស្រីម្នាក់សម្រាប់ច្រៀងឆ្លើយឆ្លងគ្នាដែរ។ ចំនែកឧបករណ៍ផ្សេងទៀត ដែលចូលរួមដែរមាន រនាតឯក រនាតធុង តាខេ ទ្រអ៊ូ ទ្រដួង(ទ្រសោ) ទ្រឯក(ទ្រឆេ) ក្រាប់ ឈិង ស្គរថូនរមនា។
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="pills-play" role="tabpanel" aria-labelledby="pills-play-tab">
+                    <p class="kh_content padding">
+                        ចំពោះរឿងដែលគេយកមកសំដែង ច្រើនដកស្រង់ចេញពីរឿងក្រៃថោង។ បទសម្រាប់កំដរក្នុងសាច់រឿងភាគច្រើនខ្ចីពីបទភ្លេងមហោរី។ 
+                        លោកបានបញ្ចាក់ថា មានគ្រូល្ខោនគែន ជាជនជាតិលាវចំនួនបួននាក់ បានមកបង្ហាត់ដល់សិល្បការិនីខ្មែរក្នុងព្រះបរមរាជវាំងក្នុងអំឡុងឆ្នាំ១៩៤៥។ ប៉ុន្តែហាក់ដូចជាមានលក្ខណៈខុសប្លែកពីល្ខោនឡាំ របស់លាវ ដែលមានសម្ដែងនៅក្រុងវៀងច័ន្ទ និងទីដទៃទៀតក្នុងប្រទេសលាវសព្វថ្ងៃ។
+                        អ្នកសម្តែងជាប្រុស និងស្រីហើយយកគែនទៅប្រគំជាមួយនឹងវង់តន្ត្រីសម័យ។ លោកបានបញ្ចាក់បន្ថែមទៀតថា តាំងពីដើមរៀងមកល្ខោនគែននេះ មិនសូវបានចេញសម្ដែងអោយប្រជាជនឃើញឡើយ។ 
+                        មានសម្តែងនៅតែក្នុងព្រះបរមរាជវាំងប៉ុណ្ណោះ ដូច្នេះហើយ ទើបមានអ្នកស្គាល់ ឬចេះល្ខោនតិចណាស់។ លុះដល់អំឡុងទសសត្ស១៩៦០ល្ខោនគែនក៏ត្រូវវិនាសសាបសូន្យ អាក់ខានលែងបានសម្តែងជារៀងរហូតមក។
+                        តាមឯកសារលោក ម៉ៅ ភឿង ឃើញថា ល្ខោនគែនមានប្រជាជនខ្មែរភូមិភាគឦសាននៅលេងជាប្រពៃណីរបស់ខ្លួនជាក់លាក់។ របាំគែនឬល្ខោនគែនតែសម្ដែងនៅតាមវត្តអារាម ឬទីប្រជុំជន ដើម្បីជួបជុំអបអរសាទរឆ្នាំថ្មីឬច្រៀងរាំកម្សាន្តសប្បាយហើយមានប្រជាប្រិយភាពទៀតផង។ 
+                        បទភ្លេងដែរគេយកមកប្រគំភាគច្រើនជាបទមហារីចង្វាក់មួយជាន់ ពីរជាន់ និងបទរាំវង់បុរាណ។ ឯរឿងសម្រាប់សម្ដែងច្រើនតែជារឿងខ្លីៗបែបមនោសញ្ចេតនាសប្បាយរីករាយ លើកសរសើរសម្រស់ធម្មជាតិ ទឹកដី ព្រៃព្រឹក្សា មច្ឆាជាតិជាដើម។ 
+                        ចំពោះយើងខ្ញុំបានសង្កេតឃើញថា ឧបករណ៍គែននេះមានប្រជាជននៅខេត្តឧត្តរមានជ័យ បន្ទាយមានជ័យ បាត់ដំបង សៀមរាប នៅប្រើប្រាស់តិចតួច។ តែប្រជាជនខ្មែរដែលនិយមប្រើប្រាស់ឧបករណ៍គែនច្រើនជាងគេ គឺនៅខេត្តស្ទឹងត្រែង ដែលមានព្រំប្រទល់ជាប់និងប្រទេសលាវ។ 
+                        ព្រោះនៅពេលបច្ចុប្បន្នគែន គឺជាទីពេញនិយមយ៉ាងខ្លាំងរបស់ជនជាតិលាវ ហើយបានក្លាយជាឧបករណ៍ពិសេសតំណាងឲ្យលាវសព្វថ្ងៃ។ គួររំលឹកដែរថាតាំងពីសម័យបុរាណមកជនជាតិលាវធ្លាប់រួមរស់នៅដោយសន្តិភាពនិងមិត្តភាពជាមួយខ្មែរ។ 
+                        ចំពោះគែនបានបង្កើតឡើងដោយស្នាដៃបុព្វបុរសខ្មែរដែលគេឃើញមានតាំងពីសម័យបុរេប្រវត្តិមកម៉្លេះគឺកើតមានតាំងពីមុនកំណើតនៃប្រទេសលាវ។
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax" style='background-image: url("img/kh_music/bayon-drawing.jpg")'></div>
+
+        <div style="background-color: whitesmoke; padding-bottom: 60px; margin-top: 20px;">
+            <div class="container">
+                <div class="row" style="margin-bottom: 30px;">
+                    <div class="col-lg-12 col-sm-12 col-md-12 col-12">
+                        <h5 class="colHeader" style="margin-top: 50px;"> <b>កម្រងរូបភាព</b></h5>
+                        <hr class="hr2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-md-12 col-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 100%">
+                            <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            </ol>
+                            <div class="carousel-inner" style="width: 100%;">
+                                <div class="carousel-item active">
+                                    <img src="img/kh_music/ken/15873256_1896794120544636_8422200549618528573_n.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/kh_music/ken/15895126_1896794207211294_2199426465713423878_n.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/kh_music/ken/IMG_5849.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/kh_music/ken/ken.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
-                </nav>
+                </div>
             </div>
         </div>
-        <div class="hero-text text-bg padding">
-            <h1 class="kh_title" style="color: rgb(236, 100, 100);">
-                វង់ភ្លេងគែន
-            </h1>
-        </div>
-    </div>
-
-    <ul class="swipetabnav nav  nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist" style="overflow-x: auto;">
-        <li class="nav-item">
-            <a class="nav-link active kh_title white" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">ភាពទូទៅ</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link kh_title white" id="pills-instruments-tab" data-toggle="pill" href="#pills-instruments" role="tab" aria-controls="pills-instruments" aria-selected="false">ឧបករណ៍តន្រ្តី</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link kh_title white" id="pills-play-tab" data-toggle="pill" href="#pills-play" role="tab" aria-controls="pills-play" aria-selected="false">ការលេង</a>
-        </li>
-    </ul>
-    <div class="parallax" style='background-image: url("img/kh_music/bayon-drawing.jpg")'>
-
-    </div>
-
-    <div class="container"s>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                <p class="kh_content padding">
-                    តាមឯកសារលោក ពេជ្រ ទុំក្រវ៉ិល ឃើញថា ល្ខោនគែនមានវត្តមានចេញពីក្នុងព្រះបរមរាជវាំង នៅរាជធានីភ្នំពេញ ក្នុងរាជ្យព្រះបាទនរោត្តម សីហនុ(១៨៤១ឥ១៩៥៥)។
-                </p>
-            </div>
-            <div class="tab-pane fade" id="pills-instruments" role="tabpanel" aria-labelledby="pills-instruments-tab">
-                <p class="kh_content padding">
-                    គេយកឧបករណ៍គែនមកប្រសិទ្ធិនាមអោយវង់តន្ត្រីនេះ ព្រោះគែនជាគោលសំខាន់ក្នុងការផ្លុំបន្លឺសាច់បទ។ វងតន្រ្តីគែនសម្រាប់កំដរវង់ល្ខោន គែនដែលប្រើគែនចំនួនបី បួន ប្រាំ ឬប្រាំមួយមានសូរពីទាបទៅខ្ពស់។ 
-                    ម្យ៉ាងទៀត អ្នកសម្ដែងល្ខោននេះច្រើនផ្លុំគែនដោយខ្លួនឯង និងរាំដោយខ្លួនឯងផង។ តែក៏មានអ្នកផ្លុំគែនផ្សេងទៀត និងអ្នកចម្រៀងពីរនាក់ប្រុសម្នាក់ស្រីម្នាក់សម្រាប់ច្រៀងឆ្លើយឆ្លងគ្នាដែរ។ ចំនែកឧបករណ៍ផ្សេងទៀត ដែលចូលរួមដែរមាន រនាតឯក រនាតធុង តាខេ ទ្រអ៊ូ ទ្រដួង(ទ្រសោ) ទ្រឯក(ទ្រឆេ) ក្រាប់ ឈិង ស្គរថូនរមនា។
-                </p>
-            </div>
-            <div class="tab-pane fade" id="pills-play" role="tabpanel" aria-labelledby="pills-play-tab">
-                <p class="kh_content padding">
-                    ចំពោះរឿងដែលគេយកមកសំដែង ច្រើនដកស្រង់ចេញពីរឿងក្រៃថោង។ បទសម្រាប់កំដរក្នុងសាច់រឿងភាគច្រើនខ្ចីពីបទភ្លេងមហោរី។ 
-                    លោកបានបញ្ចាក់ថា មានគ្រូល្ខោនគែន ជាជនជាតិលាវចំនួនបួននាក់ បានមកបង្ហាត់ដល់សិល្បការិនីខ្មែរក្នុងព្រះបរមរាជវាំងក្នុងអំឡុងឆ្នាំ១៩៤៥។ ប៉ុន្តែហាក់ដូចជាមានលក្ខណៈខុសប្លែកពីល្ខោនឡាំ របស់លាវ ដែលមានសម្ដែងនៅក្រុងវៀងច័ន្ទ និងទីដទៃទៀតក្នុងប្រទេសលាវសព្វថ្ងៃ។
-                    អ្នកសម្តែងជាប្រុស និងស្រីហើយយកគែនទៅប្រគំជាមួយនឹងវង់តន្ត្រីសម័យ។ លោកបានបញ្ចាក់បន្ថែមទៀតថា តាំងពីដើមរៀងមកល្ខោនគែននេះ មិនសូវបានចេញសម្ដែងអោយប្រជាជនឃើញឡើយ។ 
-                    មានសម្តែងនៅតែក្នុងព្រះបរមរាជវាំងប៉ុណ្ណោះ ដូច្នេះហើយ ទើបមានអ្នកស្គាល់ ឬចេះល្ខោនតិចណាស់។ លុះដល់អំឡុងទសសត្ស១៩៦០ល្ខោនគែនក៏ត្រូវវិនាសសាបសូន្យ អាក់ខានលែងបានសម្តែងជារៀងរហូតមក។
-                    តាមឯកសារលោក ម៉ៅ ភឿង ឃើញថា ល្ខោនគែនមានប្រជាជនខ្មែរភូមិភាគឦសាននៅលេងជាប្រពៃណីរបស់ខ្លួនជាក់លាក់។ របាំគែនឬល្ខោនគែនតែសម្ដែងនៅតាមវត្តអារាម ឬទីប្រជុំជន ដើម្បីជួបជុំអបអរសាទរឆ្នាំថ្មីឬច្រៀងរាំកម្សាន្តសប្បាយហើយមានប្រជាប្រិយភាពទៀតផង។ 
-                    បទភ្លេងដែរគេយកមកប្រគំភាគច្រើនជាបទមហារីចង្វាក់មួយជាន់ ពីរជាន់ និងបទរាំវង់បុរាណ។ ឯរឿងសម្រាប់សម្ដែងច្រើនតែជារឿងខ្លីៗបែបមនោសញ្ចេតនាសប្បាយរីករាយ លើកសរសើរសម្រស់ធម្មជាតិ ទឹកដី ព្រៃព្រឹក្សា មច្ឆាជាតិជាដើម។ 
-                    ចំពោះយើងខ្ញុំបានសង្កេតឃើញថា ឧបករណ៍គែននេះមានប្រជាជននៅខេត្តឧត្តរមានជ័យ បន្ទាយមានជ័យ បាត់ដំបង សៀមរាប នៅប្រើប្រាស់តិចតួច។ តែប្រជាជនខ្មែរដែលនិយមប្រើប្រាស់ឧបករណ៍គែនច្រើនជាងគេ គឺនៅខេត្តស្ទឹងត្រែង ដែលមានព្រំប្រទល់ជាប់និងប្រទេសលាវ។ 
-                    ព្រោះនៅពេលបច្ចុប្បន្នគែន គឺជាទីពេញនិយមយ៉ាងខ្លាំងរបស់ជនជាតិលាវ ហើយបានក្លាយជាឧបករណ៍ពិសេសតំណាងឲ្យលាវសព្វថ្ងៃ។ គួររំលឹកដែរថាតាំងពីសម័យបុរាណមកជនជាតិលាវធ្លាប់រួមរស់នៅដោយសន្តិភាពនិងមិត្តភាពជាមួយខ្មែរ។ 
-                    ចំពោះគែនបានបង្កើតឡើងដោយស្នាដៃបុព្វបុរសខ្មែរដែលគេឃើញមានតាំងពីសម័យបុរេប្រវត្តិមកម៉្លេះគឺកើតមានតាំងពីមុនកំណើតនៃប្រទេសលាវ។
-
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="parallax" style='background-image: url("img/kh_music/bayon-drawing.jpg")'></div>
-
-    <div style="background-color: whitesmoke; padding-bottom: 60px; margin-top: 20px;">
+        
         <div class="container">
             <div class="row" style="margin-bottom: 30px;">
                 <div class="col-lg-12 col-sm-12 col-md-12 col-12">
-                    <h5 class="colHeader" style="margin-top: 50px;"> <b>កម្រងរូបភាព</b></h5>
+                    <h5 class="colHeader" style="margin-top: 50px;"> <b>វីដេអូ</b></h5>
                     <hr class="hr2">
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 col-sm-12 col-md-12 col-12">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 100%">
-                        <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                        </ol>
-                        <div class="carousel-inner" style="width: 100%;">
-                            <div class="carousel-item active">
-                                <img src="img/kh_music/ken/15873256_1896794120544636_8422200549618528573_n.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/kh_music/ken/15895126_1896794207211294_2199426465713423878_n.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/kh_music/ken/IMG_5849.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/kh_music/ken/ken.jpg" class="d-block w-100" alt="...">
-                            </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">                  
+                    <div class="card" style="width: 70%; margin-top: 10px; margin-left: auto; margin-right: auto;">
+                        <iframe class="card-img-top" height="410" src="https://www.youtube.com/embed/UqO4y8TgRHQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <p class="card-text text-center">ការសម្តែងវង់ភ្លេងកែន</p>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="container">
-        <div class="row" style="margin-bottom: 30px;">
-            <div class="col-lg-12 col-sm-12 col-md-12 col-12">
-                <h5 class="colHeader" style="margin-top: 50px;"> <b>វីដេអូ</b></h5>
-                <hr class="hr2">
-            </div>
+
+        <!-- <div class="padding">
+            <h1 class="kh_title">កម្រងរូបភាព</h1>
         </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-12">                  
-                <div class="card" style="width: 70%; margin-top: 10px; margin-left: auto; margin-right: auto;">
-                    <iframe class="card-img-top" height="410" src="https://www.youtube.com/embed/UqO4y8TgRHQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="card-body">
-                        <p class="card-text text-center">ការសម្តែងវង់ភ្លេងកែន</p>
-                    </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 100%">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+            </ol>
+            <div class="carousel-inner" style="width: 100%;">
+                <div class="carousel-item active">
+                    <img src="img/kh_music/ken/15873256_1896794120544636_8422200549618528573_n.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/kh_music/ken/15895126_1896794207211294_2199426465713423878_n.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/kh_music/ken/IMG_5849.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/kh_music/ken/ken.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-        </div>
-    </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div> -->
+        
+        <!-- <div class=" padding" style="background-color: rgb(236, 100, 100)">
+            <div class="padding">
+                <h1 class="kh_title white">វីដេអូ</h1>
+            </div>
+            <div class="container center padding">
+                <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/UqO4y8TgRHQ' frameborder='0' allowfullscreen></iframe></div>
+            </div>
+        </div> -->
 
-    <!-- <div class="padding">
-        <h1 class="kh_title">កម្រងរូបភាព</h1>
-    </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 100%">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-
-        </ol>
-        <div class="carousel-inner" style="width: 100%;">
-            <div class="carousel-item active">
-                <img src="img/kh_music/ken/15873256_1896794120544636_8422200549618528573_n.jpg" class="d-block w-100" alt="...">
+        <div class="row" style="margin-top: 60px; padding-top: 30px; margin-right: 0; background-color: whitesmoke">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <h5 class="type"> <b>CONTACT US</b></h5>
+                <hr class="hr2" >
+                <div style="width: 100%; text-align: center; margin-top: 30px;">
+                    <a href="https://www.facebook.com/SopheakOrArtist/?__tn__=%2Cd-k-R&eid=ARDD_RpSyTwkgamVj3y5juHgPIo7Eobcf25AbV9j41-IsExNycXVlOL8QRuTC0JwlQI_TaHAEgUN0rko" target="_blank"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
+                    <a href="https://www.instagram.com/khmerartistry/" target="_blank"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
+                    <a href="tel:+85510 435 042"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
+                </div>
+                <p class="colTextPadding" style="text-align: center; line-height: 40px;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
+                <p style="font-size: 16px; text-align: center; margin-top: 20px;">Copyright &copy; Team o Nith</p>
             </div>
-            <div class="carousel-item">
-                <img src="img/kh_music/ken/15895126_1896794207211294_2199426465713423878_n.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/kh_music/ken/IMG_5849.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/kh_music/ken/ken.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div> -->
-    
-    <!-- <div class=" padding" style="background-color: rgb(236, 100, 100)">
-        <div class="padding">
-            <h1 class="kh_title white">វីដេអូ</h1>
-        </div>
-        <div class="container center padding">
-            <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/UqO4y8TgRHQ' frameborder='0' allowfullscreen></iframe></div>
-        </div>
-    </div> -->
-
-    <div class="row" style="margin-top: 60px; padding-top: 30px; margin-right: 0; background-color: whitesmoke">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-            <h5 class="type"> <b>CONTACT US</b></h5>
-            <hr class="hr2" >
-            <div style="width: 100%; text-align: center; margin-top: 30px;">
-                <a href="#"><img src="img/facebook.png" class="contactImg" style="margin-right:10px;"></a>
-                <a href="#"><img src="img/instagram.png" class="contactImg" style="margin-right:10px;"></a>
-                <a href="#"><img src="img/telephone-symbol-button.png" class="contactImg"></a>
-            </div>
-            <p class="colTextPadding" style="text-align: center; line-height: 40px;">ការ​អប់រំ គឺ​ជាការ​ហ្វឹក​ហ្វឺន​នួវ​សក្តានុភាព​ ដែល​ជា​គ្រឿង​ពង្រីក​បណ្តុះ​ ឬ បង្កើន​ចំណេះ​វិជ្ជា ។ វប្បធម៌រលត់⁣ ជាតិរលាយ⁣ វប្បធ៌មពណ្ណរាយ⁣ជាតិថ្កុំថ្កើន ។ </p>
-            <p style="font-size: 16px; text-align: center; margin-top: 20px;">Copyright &copy; Team o Nith</p>
         </div>
     </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-    $('.carousel').carousel({
-    interval: 2000
-    })
+        $('.carousel').carousel({
+        interval: 2000
+        })
+
+        function scrollToBottom()
+        {
+            var element = document.getElementById("scroll");
+            element.scrollIntoView(false);
+        }
     </script>
 </body>
 </html>
